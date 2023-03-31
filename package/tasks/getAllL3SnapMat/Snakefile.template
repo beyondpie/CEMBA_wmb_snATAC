@@ -1,0 +1,31 @@
+import json
+config_file = "config.json"
+
+with open(config_file, "r") as f:
+    config = json.load(f)
+    matFlagdir = config["matFlagdir"]
+    matLogdir = config["matLogdir"]
+    conda = config["conda"]
+    Rscript = f"{conda}/bin/Rscript"
+    atacMatScript = config["atacMatScript"]
+    groupFile = config["groupFile"]
+
+with open(groupFile, "r") as f:
+    lines = f.readlines()
+    groups = [l.strip() for l in lines if len(l.strip()) > 1]
+    print(groups)
+
+rule all:
+    input:
+        expand("{d}/{g}.done", d = matFlagdir, g = groups)
+
+rule getMat:
+    output:
+        touch(expand("{d}/{{g}}.done", d = matFlagdir))
+    log:
+        expand("{d}/{{g}}.log", d = matLogdir)
+    shell:
+        """
+        {Rscript} {atacMatScript} --config {config_file} \
+                                  --group {wildcards.g} 2> {log}
+        """

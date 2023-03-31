@@ -1,0 +1,17 @@
+{
+    "gencodevM23snapFile": "../snap/cemba.whole.gencode23.snap.rds",
+    "gencodevM16snapFile": "../snap/snapWithL3Extra.rds",
+    "ncores": 4,
+    "matDir": "out",
+    "matLogdir": "log",
+    "matFlagdir": "flagdir",
+    "ndpL2": 30000,
+    "ndpL3": 10000,
+    "conda": "/projects/ps-renlab/szu/miniconda3/envs/snATAC2",
+    "atacMatScript": "../getSnapATACMatByGroup.R",
+    "mat": "gmat",
+    "groupType": "L2",
+    "groupFile": "group.csv",
+    "gencode": "vM16",
+    "requireNextLevel": 0
+}

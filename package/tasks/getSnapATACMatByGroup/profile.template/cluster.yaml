@@ -1,0 +1,19 @@
+__default__:
+  jobname: "{rule}.{wildcards}"
+  nodes: 1
+  ppn: 1
+  walltime: "15:00:00"
+  account: "ren-group"
+  queue: "hotel"
+  email: "debug.pie@gmail.com"
+  mailon: "ae"
+  jobout: "oe"
+  log: "{rule}.{wildcards}.tscc.log"
+  logdir: "qsub_tscc_log/"
+  mem: "50gb"
+
+getMat:
+  mem: "50gb"
+  ppn: 2
+  queue: "glean"
+  walltime: 04:00:00
