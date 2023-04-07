@@ -2,6 +2,13 @@
 The scripts for the whole mouse brain snATAC seq analysis. We are still updating it. 
 
 *** other resources
+    - We mainly use SnapATAC to analyze the single-nucleus ATAC-seq data
+      - We maintain a bug-fix version of SnapATAC: https://github.com/beyondpie/SnapATAC
+        - The original SnapATAC: https://github.com/r3fang/SnapATAC
+      - There is an updated SnapATAC2: https://github.com/kaizhang/SnapATAC2
+        - This is much powerful version, and we are working on using
+          SnapATAC2 to re-analyze the data, and once we've done that,
+          we will push our scripts to the current repo, too.
     - The scripts are based on the repo: https://github.com/yal054/snATACutils
     - The deep learning related codes now in the repo:  https://github.com/yal054/mba_dl_model
       - We plan to merge those codes to this repo soon.
