@@ -1,5 +1,13 @@
 ** CEMBA_wmb_snATAC
-- The scripts for whole mouse brain snATAC seq analysis.
+The scripts for the whole mouse brain snATAC seq analysis. We are still updating it. 
+
+*** other resources
+    - The scripts are based on the repo: https://github.com/yal054/snATACutils
+    - The deep learning related codes now in the repo:  https://github.com/yal054/mba_dl_model
+      - We plan to merge those codes to this repo soon.
+    
+     
+   
 
 
 
