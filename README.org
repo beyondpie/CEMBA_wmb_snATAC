@@ -1,7 +1,7 @@
 ** CEMBA_wmb_snATAC
 The scripts for the whole mouse brain snATAC seq analysis. We are still updating it. 
 
-*** other resources
+*** Resources
     - We mainly use SnapATAC to analyze the single-nucleus ATAC-seq data
       - We maintain a bug-fix version of SnapATAC: https://github.com/beyondpie/SnapATAC
         - The original SnapATAC: https://github.com/r3fang/SnapATAC

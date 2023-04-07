@@ -1,0 +1,13 @@
+* Quality Control and Doublet Removal
+** Quality control
+   - At bulk level, we check the quality of the sequencing based on
+     the sequencing depth, number of unique fragments, and so on. The
+     most important thing is to check if the size of fragments in each
+     sample were enriched in 100 bp and 200 bp (see [[https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-1929-3][ref]]).
+   - At single-cell level, we follow the
+     [[https://www.encodeproject.org/atac-seq/][ENCODE pipeline]], we use two criteria to filter cells:
+     1. Number of unique fragment >= 1,000
+     2. Transcription start site enrichment (TSSe) >= 10
+** Doublet removal
+   - We use Scrublet for this. And the imputed gene expression from
+     snATAC-seq data is similar like what Seurat did.
