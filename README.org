@@ -1,5 +1,16 @@
 ** CEMBA_wmb_snATAC
-The scripts for the whole mouse brain snATAC seq analysis. We are still updating it. 
+This repository is used for the whole mouse brain snATAC seq analysis
+of Center for Epigenomics of the Mouse Brain Atlas (CEMBA). 
+
+*We are still updating it*.
+
+*** Pipeline
+    - We now have 234 samples and 2.3 million cells in total. So most
+      of the analysis are depend on *Snakefile* to organize the pipeline
+      and submit them to high-performance cluster (HPC) in order to
+      use hundreds of CPUs at the same time.
+    - R, Shell and Python are mainly used, especially R (version 4.2).
+    - Under the directory [[./package][package]], we put lots of common functions there.
 
 *** Resources
     - We mainly use SnapATAC to analyze the single-nucleus ATAC-seq data
