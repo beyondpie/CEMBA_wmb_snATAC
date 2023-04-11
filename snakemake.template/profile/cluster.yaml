@@ -1,0 +1,43 @@
+__default__:
+  jobname: "{rule}.{wildcards}"
+  nodes: 1
+  ppn: 1
+  walltime: "02:00:00"
+  account: "ren-group"
+  queue: "glean"
+  email: "debug.pie@gmail.com"
+  mailon: "ae"
+  jobout: "oe"
+  log: "{rule}.{wildcards}.tscc.log"
+  logdir: "qsub_tscc_log/"
+  mem: "10gb"
+
+parsePmat:
+  ppn: 2
+  mem: "80gb"
+  queue: "hotel"
+  walltime: 24:00:00
+
+runCicero:
+  ppn: 1
+  mem: "40gb"
+  queue: "glean"
+  walltime: 08:00:00
+
+runShufCicero:
+  ppn: 1
+  mem: "40gb"
+  queue: "hotel"
+  walltime: 08:00:00
+
+filterCiceroByShuf:
+  ppn: 1
+  mem: "40gb"
+  queue: "glean"
+  walltime: 04:00:00
+
+filterDistalProximalConns:
+  ppn: 1
+  mem: "10gb"
+  queue: "glean"
+  walltime: 01:00:00

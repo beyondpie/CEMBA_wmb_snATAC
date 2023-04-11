@@ -1,0 +1,17 @@
+* A general template for snakemake
+We used [[https://github.com/snakemake/snakemake][snakemake]] to organize our pipeline for majority of the data
+analysis. Here we provide one example Snakefile used for calling
+cicero (part of the rules are selected and the config file is
+modified).
+
+** About snakefile
+   1. We can basically treat it as a *Python* script with some
+      /snakemake/ rules.
+   2. It supports yaml file as a config file, and the parameters in
+      this file will have lower priorities with the parameters
+      directly claimed when calling snakemake with `--config
+      param1=value1`. 
+   3. It supports high-performance cluster (HPC) automatically.
+
+
+

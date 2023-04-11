@@ -1,0 +1,142 @@
+configfile : "config.yaml"
+
+Rscript_cicero = config["Rscript_cicero"]
+code_project_dir = config['code_project_dir']
+work_project_dir = config['work_project_dir']
+cCREgene_dir = config['cCREgene_dir']
+meta_col = config['meta_col']
+
+if meta_col == "AllenAnnotConcat":
+    binarypmat_file = config["subclass_bpmat_file"]
+else:
+    print(f"Based on {meta_col}, we load L3 pmat file.")
+    binarypmat_file = config["L3_bpmat_file"]
+binarypmat_path = f"{code_project_dir}/{binarypmat_file}"
+
+code_dir = f'{code_project_dir}/{cCREgene_dir}'
+work_dir = f'{work_project_dir}/{cCREgene_dir}'
+pmat_dir = f'{work_dir}/{config["pmat_dir"]}/{meta_col}'
+cicero_dir = f'{work_dir}/{config["cicero_dir"]}/{meta_col}'
+
+
+group_file = f'{code_project_dir}/{config["group_file"]}'
+with open(group_file) as f:
+    lines = f.readlines()
+groups = [l.strip() for l in lines if len(l.strip()) > 1]
+print(f"{len(groups)} groups will be used.")
+
+peak_file = f'{code_project_dir}/{config["peak_file"]}'
+mm10_file = f'{code_project_dir}/{config["mm10_file"]}'
+k = config['k_cicero']
+reduct = config['reduct_cicero']
+pre_method = config['preprocess_cicero']
+debug = config['debug']
+
+peakannot_file = f'{code_project_dir}/{config["peakannot_file"]}'
+
+cor_method = ["pearson", "spearman"]
+allen_l2_cpm_file = f'{code_project_dir}/{config["allen_l2_cpm_file"]}'
+atac_subclass_cpm_file = f'{code_project_dir}/{config["atac_subclass_cpm_file"]}'
+rdm_pdc_file = f'{code_project_dir}/{config["rdm_pdc_file"]}'
+pdc_file = f'{code_project_dir}/{config["pdc_file"]}'
+chunk_size = config["chunk_size"]
+
+
+rule all:
+    input:
+        expand("flag/cicero_{g}.done", g = groups),
+        expand("flag/shufcicero_{g}.done", g = groups),
+        expand("flag/filterCiceroByShuf_{g}.done", g = groups),
+        expand("flag/filterDistalProximalConns_{g}.done2", g = groups),
+        "flag/mergeDistalProximalConns.done2",
+
+rule runCicero:
+    output:
+        touch("flag/cicero_{group}.done")
+    log:
+        "log/cicero_{group}.log"
+    shell:
+        """
+        {Rscript_cicero} {code_dir}/02.runCicero2.R \
+            --pmatDir {pmat_dir} \
+            --metaCol {meta_col} \
+            --group {wildcards.group} \
+            --knn {k} \
+            --preprocess {pre_method} \
+            --reduct {reduct} \
+            --genomeFile {mm10_file} \
+            --peakFile {peak_file} \
+            --outdir {cicero_dir} \
+            --shuf 0 \
+            --debug {debug} 2> {log}
+        """
+
+
+rule runShufCicero:
+    output:
+        touch("flag/shufcicero_{group}.done")
+    log:
+        "log/shufcicero_{group}.log"
+    shell:
+        """
+        {Rscript_cicero} {code_dir}/02.runCicero2.R \
+            --pmatDir {pmat_dir} \
+            --metaCol {meta_col} \
+            --group {wildcards.group} \
+            --knn {k} \
+            --preprocess {pre_method} \
+            --reduct {reduct} \
+            --genomeFile {mm10_file} \
+            --peakFile {peak_file} \
+            --outdir {cicero_dir} \
+            --shuf 1 \
+            --debug {debug} 2> {log}
+        """
+
+rule filterCiceroByShuf:
+    input:
+        a1 = ancient("flag/cicero_{group}.done"),
+        a2 = ancient("flag/shufcicero_{group}.done")
+    output:
+        touch("flag/filterCiceroByShuf_{group}.done")
+    log:
+        "log/filterCiceroByShuf_{group}.log"
+    shell:
+        """
+        {Rscript_cicero} {code_dir}/03.filterCiceroByShuf.R \
+            --bpmatFile {binarypmat_path} \
+            --peakFile {peak_file} \
+            --metaCol {meta_col} \
+            --group {wildcards.group} \
+            --ciceroDir {cicero_dir} \
+            --outdir {cicero_dir} \
+            --debug {debug} 2> {log}
+        """
+
+
+rule filterDistalProximalConns:
+    output:
+        # previous lack of chr1, and rerun it
+        touch("flag/filterDistalProximalConns_{group}.done2")
+    log:
+        "log/filterDistalProximalConns_{group}.log"
+    shell:
+        """
+        bash {code_dir}/04.addTSSAnnot2Conns.sh \
+          -c {cicero_dir} -a {peakannot_file} \
+          -g {wildcards.group} -m {meta_col} 2> {log}
+        """
+
+rule mergeDistalProximalConns:
+    input:
+        expand("flag/filterCiceroByShuf_{g}.done", g = groups)
+    output:
+        touch("flag/mergeDistalProximalConns.done2")
+    log:
+        "log/mergeDistalProximalConns.log"
+    shell:
+        """
+        bash {code_dir}/05.mergeDistalProximalConns.sh \
+          -c {cicero_dir} -m {meta_col} 2> {log} 
+        """
+        
