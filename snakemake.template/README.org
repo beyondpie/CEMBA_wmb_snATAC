@@ -16,9 +16,9 @@ modified).
       - Basically, we can have a local directory named /profile/. For
         example, when HPC uses pbs-torque as the job scheduler, we
         will have two files under /profile/:
-        a. *cluster.yaml* :: resource configs for each rule in
+        - *cluster.yaml*: resource configs for each rule in
         Snakemake.
-        b. *config.yaml* :: config specific for pbs-torque, which do
+        - *config.yaml*: config specific for pbs-torque, which do
         not need to be changed.
       - Then during submit snakemake job, use the parameter `--profile
         profile`.
