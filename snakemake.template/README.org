@@ -1,5 +1,5 @@
 * A general template for snakemake
-We used [[https://github.com/snakemake/snakemake][snakemake]] to organize our pipeline for majority of the data
+We use [[https://github.com/snakemake/snakemake][snakemake]] to organize our pipeline for majority of the data
 analysis. Here we provide one example Snakefile used for calling
 cicero (part of the rules are selected and the config file is
 modified).
@@ -24,8 +24,8 @@ modified).
         profile`.
         
 ** Files under the directory
-  1. *Snakefile*: a snakefile example we used.
-     - /wildcards/ were used to run multiple gourps in parallel.
+  1. *Snakefile*: a snakefile example we use.
+     - /wildcards/ is used to run multiple gourps in parallel.
      - Use /touch/ to label the status of one job.
      - Show how to add rule to run after all the seperated jobs are
        finished.
