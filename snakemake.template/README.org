@@ -11,7 +11,28 @@ modified).
       this file will have lower priorities with the parameters
       directly claimed when calling snakemake with `--config
       param1=value1`. 
-   3. It supports high-performance cluster (HPC) automatically.
-
+   3. It supports high-performance cluster (HPC) automatically. See
+      the [[https://github.com/snakemake-profiles/doc][refenrence]] for details.
+      - Basically, we can have a local directory named /profile/. For
+        example, when HPC uses pbs-torque as the job scheduler, we
+        will have two files under /profile/:
+        a. *cluster.yaml* :: resource configs for each rule in
+        Snakemake.
+        b. *config.yaml* :: config specific for pbs-torque, which do
+        not need to be changed.
+      - Then during submit snakemake job, use the parameter `--profile
+        profile`.
+        
+** Files under the directory
+  1. *Snakefile*: a snakefile example we used.
+     - /wildcards/ were used to run multiple gourps in parallel.
+     - Use /touch/ to label the status of one job.
+     - Show how to add rule to run after all the seperated jobs are
+       finished.
+  2. *config.yaml*: a config file to maintain multiple parameters
+  3. *Makefile*: show how to run snakemake.
+     - Instead of directly running *snakemake*, here we copy the files
+       to another directory, so that the generated logs are under that
+       directory. 
 
 
