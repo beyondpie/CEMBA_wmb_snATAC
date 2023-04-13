@@ -9,3 +9,7 @@ test_snakemake : test_dir Snakefile
 	cd $< && snakemake --config \
     pmat_dir=$< \
      -c 1 -p --snakefile Snakefile -R --rerun-incomplete --profile profile
+
+
+submit_qsub:
+	qsub pbs.demo.sh
