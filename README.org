@@ -20,7 +20,8 @@ of Center for Epigenomics of the Mouse Brain Atlas (CEMBA).
         - This is much powerful version, and we are working on using
           SnapATAC2 to re-analyze the data, and once we've done that,
           we will push our scripts to the current repo, too.
-    - The scripts are based on the repo: https://github.com/yal054/snATACutils
+    - Comparation between Scrublet and AMULET: https://github.com/yuelaiwang/CEMBA_AMULET_Scrublet 
+    - The peak calling pipeline and NMF analysis are mainly from: https://github.com/yal054/snATACutils
     - The deep learning related codes now in the repo:  https://github.com/yal054/mba_dl_model
       - We plan to merge those codes to this repo soon.
     
