@@ -1,0 +1,76 @@
+{
+    "__default__" :
+    {
+        "time" : "walltime=48:00:00",
+        "ppn" : "nodes=1:ppn=4",
+        "queue" : "hotel"
+    },
+    "snap_align" :
+    {
+        "time" : "walltime=48:00:00",
+        "ppn" : "nodes=1:ppn=4",
+        "queue" : "hotel"
+    },
+    "snap_pre" :
+    {
+        "time" : "walltime=24:00:00",
+        "ppn" : "nodes=1:ppn=4",
+        "queue" : "hotel"
+    },
+    "snap_add_bmat" :
+    {
+        "time" : "walltime=24:00:00",
+        "ppn" : "nodes=1:ppn=2",
+        "queue" : "hotel"
+    },
+    "snap_add_gmat" :
+    {
+        "time" : "walltime=24:00:00",
+        "ppn" : "nodes=1:ppn=2",
+        "queue" : "hotel"
+    },
+    "pre_sta" :
+    {
+        "time" : "walltime=24:00:00",
+        "ppn" : "nodes=1:ppn=5",
+        "queue" : "hotel"
+    },
+    "cluster" :
+    {
+        "time" : "walltime=24:00:00",
+        "ppn" : "nodes=1:ppn=6",
+        "queue" : "hotel"
+    },
+    "plotGene" :
+    {
+    "time" : "walltime=24:00:00",
+    "ppn" : "nodes=1:ppn=2",
+        "queue" : "hotel"
+    },
+    "dump_frag" :
+    {
+        "time" : "walltime=24:00:00",
+        "ppn" : "nodes=1:ppn=2",
+        "queue" : "home"
+    },
+    "tsse2depth" :
+    {
+        "time" : "walltime=24:00:00",
+        "ppn" : "nodes=1:ppn=2",
+        "queue" : "home"
+    },
+    "bam2bedpe":
+    {
+        "time" : "walltime=24:00:00",
+        "ppn" : "nodes=1:ppn=1",
+        "queue" : "hotel"
+    },
+    "snap2cb" :
+    {
+        "time" : "walltime=1:00:00",
+        "ppn" : "nodes=1:ppn=1",
+        "queue" : "glean"
+    }
+}
+
+

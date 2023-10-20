@@ -1,0 +1,35 @@
+system: imac
+python:
+  imac: /Users/szu/mambaforge/bin/python
+  tscc: /projects/ps-renlab/szu/miniconda3/envs/snATAC2/bin/python
+  encoder: /projects/ps-renlab2/szu/miniconda3/envs/cicero/bin/python
+Rscript:
+  imac: /usr/local/bin/Rscript
+  tscc: /projects/ps-renlab/szu/miniconda3/envs/snATAC2/bin/Rscript
+  encoder: /projects/ps-renlab2/szu/miniconda3/envs/cicero/bin/Rscript
+code_dir:
+  imac: /Users/szu/git-recipes/mouseBrainAtlas/cembaV2
+  tscc: /projects/ps-renlab2/szu/projects/CEMBA2
+  encoder: /projects/ps-renlab2/szu/projects/CEMBA2
+work_dir:
+  imac: /Users/szu/git-recipes/mouseBrainAtlas/cembaV2
+  tscc: /oasis/tscc/scratch/szu/projects/CEMBA2
+  encoder: /projects/ps-renlab2/szu/projects/CEMBA2
+homer:
+  imac: /Users/szu/mambaforge/envs/bio/bin/findMotifsGenome.pl
+  tscc: /projects/ps-renlab2/szu/miniconda3/envs/cicero/bin/findMotifsGenome.pl
+  encoder: /projects/ps-renlab2/szu/miniconda3/envs/cicero/bin/findMotifsGenome.pl
+subclass_order_meta: meta/subclass.order.hc.csv
+peak_nm_file: data/peaks.txt
+cluster_nm_file: data/clusters.txt
+mat_pbyc_h5: data/cpm.cbyp.ppdc.h5
+tag: ppdc
+out: nmf_ppdc
+n_rerun: 3
+mod_from: 78
+mod_to: 80
+mod_by: 2
+use_detailed_mod: 1
+detailed_mod: 78a80
+mod_split: a
+module: 54

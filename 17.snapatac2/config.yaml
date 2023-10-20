@@ -1,0 +1,71 @@
+system: imac
+## clustering on which level
+## so on L1, means we perform L2 level clustering
+clustering_level: L1
+retries: 1
+conda:
+  imac: sa2
+  encoder: sa2
+  tscc: sa2
+  tscc_test: sa2
+  test_unite: sa2
+
+project_dir:
+  imac: /Users/szu/git-recipes/mouseBrainAtlas/CEMBA2
+  encoder: /projects/ps-renlab/szu/projects/CEMBA2
+  tscc: /projects/ps-renlab/szu/projects/CEMBA2
+  tscc_test: /projects/ps-renlab/szu/projects/CEMBA2
+  test_unite: /Users/szu/git-recipes/mouseBrainAtlas/CEMBA2
+  
+work_dir:
+  imac: /Users/szu/git-recipes/mouseBrainAtlas/CEMBA2/17.snapatac2
+  encoder: /projects/ps-renlab/szu/projects/CEMBA2/17.snapatac2
+  #tscc: /oasis/tscc/scratch/szu/projects/CEMBA2/17.snapatac2
+  # use condo since scratch has slow IO.
+  tscc: /projects/ps-renlab/szu/projects/CEMBA2/17.snapatac2
+  tscc_test: /oasis/tscc/scratch/szu/projects/CEMBA2/17.snapatac2
+  test_unite: /users/szu/test/17.snapatac2
+out_dir: result
+blacklist_file: 17.snapatac2/meta/mm10.blacklist.bed
+barcode2id_file: 17.snapatac2/resource/barcode2id.csv
+sample2fragment_file: 17.snapatac2/resource/sample2fragment.csv
+pre_clustering_meta: 17.snapatac2/resource/cluster2size.csv
+cemba_anndata_file: 17.snapatac2/resource/merge_cemba_all.h5ad
+max_united_size: 200000
+embed_nfeat: 500000
+embed_nsample: 3000000
+embed_ncomp: 30
+embed_name: nfeat-default_nsample-all_nc30
+embed:
+  nfeat: 500000
+  ncomp: 30
+  embed_nsample: 3000000
+  name: allfeat_nc30
+knn:
+  n: 50
+  method: exact
+  name: knn50
+leiden:
+  n_iter: -1
+  weight: True
+  obj: modularity
+  min_size: 50
+  repeat: 1
+  minr: 0.1
+  maxr: 2.0
+  byr: 0.1
+  seed: 0
+  name: igraph_leiden_modularity
+  n_sample: 20000
+umap:
+  n_neigh: 15
+  n_comp: 2
+  metric: euclidean
+  init: spectral
+  min_dist: 0.01
+  a: 1.8956
+  b: 0.8006
+  seed: 0
+  
+  
+  

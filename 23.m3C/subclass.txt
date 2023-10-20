@@ -1,0 +1,12 @@
+Sst_Gaba
+Pvalb_Gaba
+CBX_MLI_Megf11_Gaba
+Vip_Gaba
+CA1-ProS_Glut
+CB_Granule_Glut
+L6_CT_CTX_Glut
+L2-3_IT_CTX_Glut
+Oligo_NN
+Astro-TE_NN
+Microglia_NN
+Bergmann_NN

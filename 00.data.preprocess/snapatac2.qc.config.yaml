@@ -1,0 +1,41 @@
+system: imac
+conda:
+  imac: /Users/szu/mambaforge
+  tscc: /projects/ps-renlab2/szu/miniconda3
+  silencer: /projects/ps-renlab2/szu/miniconda3
+conda_env:
+  imac: sa2dev
+  silencer: sa2dev
+  tscc: sa2dev_tscc
+python:
+  imac: /Users/szu/mambaforge/envs/sa2dev/bin/python
+  silencer: /projects/ps-renlab2/szu/miniconda3/envs/sa2dev/bin/python
+  tscc: /projects/ps-renlab2/szu/miniconda3/envs/sa2dev/bin/python
+project_dir:
+  imac: /Users/szu/git-recipes/mouseBrainAtlas/CEMBA2
+  silencer: /projects/ps-renlab2/szu/projects/CEMBA2
+  tscc: /projects/ps-renlab2/szu/projects/CEMBA2
+work_dir:
+  imac: /Users/szu/git-recipes/mouseBrainAtlas/CEMBA2/00.data.preprocess
+  silencer: /projects/ps-renlab2/szu/projects/CEMBA2/00.data.preprocess
+  tscc: /projects/ps-renlab2/szu/projects/CEMBA2/00.data.preprocess
+out_dir: snapatac2_pp_out
+sample2bamfile:
+  imac: 00.data.preprocess/test_sample2bamfile.csv
+  silencer: meta/sample2rawbam.csv
+  tscc: 00.data.preprocess/test_sample2bamfile_tscc.csv
+chrom_size_file: meta/mm10.chrom.sizes.lite
+gtf_file: meta/gencode.vM23.gene.annot2.gtf
+blacklist_file: meta/mm10.blacklist.bed
+samples_file:
+  imac: 00.data.preprocess/test_samples.txt
+  silencer: meta/CEMBA_all_samples.txt
+  tscc: meta/CEMBA_all_samples.txt
+embed_nfeature: 500000
+embed_ncomps: 50
+embed_sample_size: 1.0
+distance_metric: cosine
+knn: 50
+knn_method: hora
+debug: 0
+  

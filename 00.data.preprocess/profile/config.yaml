@@ -1,0 +1,5 @@
+cluster-config: "profile/cluster.yaml"
+cluster: "qsub -N {cluster.jobname} -l nodes={cluster.nodes}:ppn={cluster.ppn},walltime={cluster.walltime} -A {cluster.account} -q {cluster.queue} -M {cluster.email} -m {cluster.mailon} -j {cluster.jobout} -V "
+jobs: 100
+verbose: true
+notemp: true
