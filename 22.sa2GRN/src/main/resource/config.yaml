@@ -1,0 +1,24 @@
+system: mediator
+python_bin:
+  imac: /Users/szu/mambaforge/envs/celloracle/bin/python
+  tscc: /projects/ps-renlab2/szu/miniconda3/envs/celloracle/bin/python
+  encoder: /projects/ps-renlab2/szu/miniconda3/envs/celloracle/bin/python
+  mediator: /home/szu/miniforge3/envs/sa2/bin/python
+code_project_dir:
+  imac: /Users/szu/git-recipes/mouseBrainAtlas/cembaV2
+  tscc: /projects/ps-renlab2/szu/projects/CEMBA2
+  encoder: /projects/ps-renlab2/szu/projects/CEMBA2
+  mediator: /projects/ps-renlab2/szu/projects/CEMBA2
+work_project_dir:
+  imac: /Users/szu/git-recipes/mouseBrainAtlas/cembaV2
+  tscc: /oasis/tscc/scratch/szu/projects/CEMBA2
+  encoder: /projects/ps-renlab2/szu/projects/CEMBA2
+  mediator: /projects/ps-renlab2/szu/projects/CEMBA2
+local_dir: 22.sa2GRN
+pdc_suffix: pdc.suffix.txt
+tfscan_dir: out/tfscan
+threshold_gimme: 10
+subclass4GRN: allen.subclass.chosen.txt
+allenRNA_dir: src/main/resource/sa2.allen.logCPM.vf3281.ds1000.subclass.specific
+GRN_dir: out/GRN
+

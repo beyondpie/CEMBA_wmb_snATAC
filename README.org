@@ -2,9 +2,7 @@
 This repository is used for the whole mouse brain snATAC seq analysis
 of Center for Epigenomics of the Mouse Brain Atlas (CEMBA). 
 
-*We are still updating it*.
-
-*** Pipeline
+** Pipeline
     - We now have 234 samples and 2.3 million cells in total. So most
       of the analysis are depend on *Snakefile* to organize the pipeline
       and submit them to high-performance cluster (HPC) in order to
@@ -12,7 +10,7 @@ of Center for Epigenomics of the Mouse Brain Atlas (CEMBA).
     - R, Shell and Python are mainly used, especially R (version 4.2).
     - Under the directory [[./package][package]], we put lots of common functions there.
 
-*** Resources
+** Resources
     - We mainly use SnapATAC to analyze the single-nucleus ATAC-seq data
       - We maintain a bug-fix version of SnapATAC: https://github.com/beyondpie/SnapATAC
         - The original SnapATAC: https://github.com/r3fang/SnapATAC
@@ -20,11 +18,13 @@ of Center for Epigenomics of the Mouse Brain Atlas (CEMBA).
         - This is much powerful version, and we are working on using
           SnapATAC2 to re-analyze the data, and once we've done that,
           we will push our scripts to the current repo, too.
-    - The scripts are based on the repo: https://github.com/yal054/snATACutils
+    - Comparation between Scrublet and AMULET: https://github.com/yuelaiwang/CEMBA_AMULET_Scrublet 
+    - The peak calling pipeline and NMF analysis are mainly from: https://github.com/yal054/snATACutils
     - The deep learning related codes now in the repo:  https://github.com/yal054/mba_dl_model
       - We plan to merge those codes to this repo soon.
     
-     
+** NOTE
+   - We here put majority analysis of CEMBA whole mouse brain (wmb) by SnapATAC2
    
 
 

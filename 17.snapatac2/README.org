@@ -1,0 +1,23 @@
+* CEMBA snATAC-seq clustering using SnapATAC2
+** Installation of SnapATAC2
+   #+BEGIN_SRC shell
+  # Install a mamba enviroment named sa2 with python=3.10 or newer version
+  # Then
+  mamba activate sa2
+   && mamba install -c conda-forge -c bioconda snakemake \
+   && mamba install -c anaconda cmake
+  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh \
+     && rustup default nightly
+  git clone https://github.com/kaizhang/SnapATAC2.git ~/softwares/SnapATAC2 \
+     && cd ~/softwares/SnapATAC2/snapatac2-python && pip install .
+  # current numba depends on numpy=1.24
+  pip install numpy==1.24 && pip install ipython pyprojroot matplotlib
+#+END_SRC
+
+** NOTE
+*** TODO save L1-level QC, doublet removal and clustering result
+*** Under ps-renlab, we perform clustering.
+*** How to run scala file
+    1. enter post_script
+    2. run: ~sbt~
+    3. then run: ~run~, this will run Hello in sa2_dlt2_preprareL2.scala

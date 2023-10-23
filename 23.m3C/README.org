@@ -1,0 +1,18 @@
+* Proximal-distal pairs verification from m3C data.
+  - Sst Gaba
+  - Pvalb Gaba
+  - CBX MLI Megf11 Gaba
+  - Vip Gaba
+  - CA1-ProS Glut
+  - CB Granule Glut
+  - L6 CT CTX Glut
+  - L2/3 IT CTX Glut
+  - Oligo NN
+  - Astro-TE NN
+  - Microglia NN
+  - Bergmann NN
+  
+  
+  
+  
+  

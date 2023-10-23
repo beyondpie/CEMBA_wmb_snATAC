@@ -1,0 +1,8 @@
+* SCENICPLUS
+** motif database:
+   - */oasis/tscc/scratch/smamde/scenic_plus_mouse_database*
+** NOTE:
+   - the output from scenicplus may have the same name or we need to test output
+     in order to make sure no conflicts files are generated for different tasks.
+   
+

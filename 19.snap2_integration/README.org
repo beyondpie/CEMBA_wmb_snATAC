@@ -1,0 +1,97 @@
+* Integration analysis with Allen scRNA-seq data and snATAC-seq data
+** Allen scRNA-seq (10Xv3 + 10Xv2) and snRNA-seq (multiome)
+   - Downloading:
+     Under encoder, use ~aws s3 cp [allen data] [local_target]~
+   - They are saved in scanpy anndata format.
+   - anndata.X is log-normalzied, which is CPM-log-normlization.
+     - CPM: count per million
+** BICCN-CEMBA brain region
+   - Exploration of CEMBA in CCF
+     https://drive.google.com/drive/folders/1mfwJtBC42BFe77JH9lXOSZ_jxrKbBBGt
+
+* Installation of Seurat in tscc
+** conda config
+   - conda config --add channels defaults
+   - conda config --add channels bioconda
+   - conda config --add channels conda-forge
+** conda install
+   - install R using conda
+     - conda create -n seurat  r-base r-essentials
+** Install seurat4 after activating conda env
+   - Install dependencies (having issues when installing them under R)
+    - conda install -c conda-forge r-uwot
+   - R: install.packages("Seurat")
+** Install Seurat5
+   - Shell:
+     conda install -c conda-forge r-uwot
+     conda install -c anaconda hdf5
+     conda install -c conda-forge reticulate
+   - R: install.packages(c("R.utils", "future", "remotes"))
+      - [[https://satijalab.org/seurat/articles/future_vignette][Seurat support future for parallization]]
+        - Functions: ScaleData, FindIntegrationAnchors, FindClusters
+   - R: remotes::install_github("bnprks/BPCells")
+   - R: BiocManager::install("Rsamtools")
+     R: remotes::install_github("stuart-lab/signac", "seurat5")
+   - R: remotes::install_github("satijalab/seurat", "seurat5")
+        remotes::install_github("satijalab/seurat-data", "seurat5")
+        [OPTIONAL] remotes::install_github("mojaveazure/seurat-disk")
+     - [MUST] Prepare to FastMNN, Harmony for integration
+       - R: remotes::install_github('satijalab/seurat-wrappers', ref = "seurat5", force = TRUE, upgrade = "never")
+         - may need to usethis package to add GITHUB_PAT to rprofile
+         - only this version has FastMNNIntegration
+       - R: FastMNN BiocManager::install("batchelor")
+       - R: Harmony install.packages("harmony")
+** Settings of Seurat v5
+   - [MUST] R: options(Seurat.object.assay.version = 'v5')
+     To use new Seurat v5 assays.
+     Loading Seurat v5 beta version To maintain compatibility with
+     previous workflows, new Seurat objects will use the previous
+     object structure by default.
+   - [MUST] R: options(future.globals.maxSize = 6e9)
+     Even not use future package directly, inside Seurat it uses it, and
+     need to increase the size for future.
+     For example, I got the error: Computing within dataset neighborhoods
+     Error in getGlobalsAndPackages(expr, envir = envir, globals = globals) : 
+     The total size of the 7 globals exported for future expression
+     (‘FUN()’) is 670.56 MiB.. This exceeds the maximum allowed size
+     of 500.00 MiB (option 'future.globals.maxSize'). The three
+     largest globals are ‘query’ (670.45 MiB of class ‘numeric’),
+     ‘index’ (85.51 KiB of class ‘S4’) and ‘FUN’ (29.86 KiB of class
+     ‘function’)
+     Calls: IntegrateLayers ... getGlobalsAndPackagesXApply -> getGlobalsAndPackages
+     In addition: Warning messages:
+     1: In asMethod(object) :
+       sparse->dense coercion: allocating vector of size 5.2 GiB
+     2: In asMethod(object) :
+       sparse->dense coercion: allocating vector of size 2.5 GiB
+** Other packages I use for integration
+   - R: install.packages(c("here", "logger", "import", "withr"))
+
+     
+* Installation of Seurat v5 in mac
+  I have troubles when install BPCells using conda under MacOS system.
+  So I use brew system to install Seurat in mac.
+  See [[https://github.com/bnprks/BPCells/issues/3#issuecomment-1375238635][ref]].
+  0. Clean the conda effect: quite even base env.
+     - It may introduce dependencies errors later.
+  1. ~brew install hdf5 llvm~
+  2. Then I can install BPCells in R: ~remotes::install_github("bnprks/BPCells")~
+  3. R: ~install.packages(c("R.utils", "future", "remotes"))~
+  4. R: ~install.packages("RCurl")~
+     - have to conda deactivate, and quite base env. otherwise, will have errors.
+     - this might because I use brew system to install R
+  5. R: ~install.packages("RSamtools")~
+  6. R: ~remotes::install_github("satijalab/seurat-data", "seurat5")~
+        ~remotes::install_github("stuart-lab/signac", "seurat5")~
+        ~remotes::install_github("satijalab/seurat", "seurat5")~
+  7. R: ~remotes::install_github('satijalab/seurat-wrappers', ref = "seurat5", force = TRUE, upgrade = "never")~
+        ~BiocManager::install("batchelor")~
+        ~install.packages("harmony")~
+  
+* Working directory in TSCC
+  - /projects/ps-renlab2/szu/projects/CEMBA2
+* Seurat data
+  - Under directory out
+    - transferLabel: Seurat generated under encoder machine.
+    - [deprecated] transferLabel_encoder: a copy of transferLabel
+    - transferLabel_tscc: Seurat generated under tscc
