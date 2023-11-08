@@ -127,3 +127,4 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+/meta/._subclass_and_genemarker_CEMBAv1.xlsx
