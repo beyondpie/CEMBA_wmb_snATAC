@@ -35,7 +35,6 @@ of Center for Epigenomics of the Mouse Brain Atlas (CEMBA).
 *** Integration and annotation
     We use Allen's scRNAseq data and their annotations for our data annotation.
     See details in [[file:19.snap2_integration][19.snap2_integratio]]
-    - Manual check: [[https://docs.google.com/spreadsheets/d/1PRaBDlMuFdMAUrcahdyVrIuk0Pwj3Yx2_1DG3NHFMOg/edit#gid=1426252395][L4-subclass annotation check]]
 *** Peak calling
    We use macs2 with multiple stage filtering, especially use SPM >= 5
    for filtering peaks.
