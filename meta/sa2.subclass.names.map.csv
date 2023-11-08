@@ -1,0 +1,340 @@
+subclass_id,subclass_id_label,subclass_label,subclass_label_bw,subclass_label_peak,subclass_id_label_bw,subclass_label_mCG
+1,001 CLA-EPd-CTX Car3 Glut,CLA-EPd-CTX Car3 Glut,CLA-EPd-CTX_Car3_Glut,CLA-EPd-CTX_Car3_Glut,001_CLA-EPd-CTX_Car3_Glut,CLA-EPd-CTX_Car3_Glut
+2,002 IT EP-CLA Glut,IT EP-CLA Glut,IT_EP-CLA_Glut,IT_EP-CLA_Glut,002_IT_EP-CLA_Glut,IT_EP-CLA_Glut
+3,003 L5/6 IT TPE-ENT Glut,L5/6 IT TPE-ENT Glut,L5.6_IT_TPE-ENT_Glut,L5-6_IT_TPE-ENT_Glut,003_L5.6_IT_TPE-ENT_Glut,L5_6_IT_TPE-ENT_Glut
+4,004 L6 IT CTX Glut,L6 IT CTX Glut,L6_IT_CTX_Glut,L6_IT_CTX_Glut,004_L6_IT_CTX_Glut,L6_IT_CTX_Glut
+5,005 L5 IT CTX Glut,L5 IT CTX Glut,L5_IT_CTX_Glut,L5_IT_CTX_Glut,005_L5_IT_CTX_Glut,L5_IT_CTX_Glut
+6,006 L4/5 IT CTX Glut,L4/5 IT CTX Glut,L4.5_IT_CTX_Glut,L4-5_IT_CTX_Glut,006_L4.5_IT_CTX_Glut,L4_5_IT_CTX_Glut
+7,007 L2/3 IT CTX Glut,L2/3 IT CTX Glut,L2.3_IT_CTX_Glut,L2-3_IT_CTX_Glut,007_L2.3_IT_CTX_Glut,L2_3_IT_CTX_Glut
+8,008 L2/3 IT ENT Glut,L2/3 IT ENT Glut,L2.3_IT_ENT_Glut,L2-3_IT_ENT_Glut,008_L2.3_IT_ENT_Glut,L2_3_IT_ENT_Glut
+9,009 L2/3 IT PIR-ENTl Glut,L2/3 IT PIR-ENTl Glut,L2.3_IT_PIR-ENTl_Glut,L2-3_IT_PIR-ENTl_Glut,009_L2.3_IT_PIR-ENTl_Glut,L2_3_IT_PIR-ENTl_Glut
+10,010 IT AON-TT-DP Glut,IT AON-TT-DP Glut,IT_AON-TT-DP_Glut,IT_AON-TT-DP_Glut,010_IT_AON-TT-DP_Glut,IT_AON-TT-DP_Glut
+11,011 L2 IT ENT-po Glut,L2 IT ENT-po Glut,L2_IT_ENT-po_Glut,L2_IT_ENT-po_Glut,011_L2_IT_ENT-po_Glut,L2_IT_ENT-po_Glut
+12,012 MEA Slc17a7 Glut,MEA Slc17a7 Glut,MEA_Slc17a7_Glut,MEA_Slc17a7_Glut,012_MEA_Slc17a7_Glut,MEA_Slc17a7_Glut
+13,013 COAp Grxcr2 Glut,COAp Grxcr2 Glut,COAp_Grxcr2_Glut,COAp_Grxcr2_Glut,013_COAp_Grxcr2_Glut,COAp_Grxcr2_Glut
+14,014 LA-BLA-BMA-PA Glut,LA-BLA-BMA-PA Glut,LA-BLA-BMA-PA_Glut,LA-BLA-BMA-PA_Glut,014_LA-BLA-BMA-PA_Glut,LA-BLA-BMA-PA_Glut
+15,015 ENTmv-PA-COAp Glut,ENTmv-PA-COAp Glut,ENTmv-PA-COAp_Glut,ENTmv-PA-COAp_Glut,015_ENTmv-PA-COAp_Glut,ENTmv-PA-COAp_Glut
+16,016 CA1-ProS Glut,CA1-ProS Glut,CA1-ProS_Glut,CA1-ProS_Glut,016_CA1-ProS_Glut,CA1-ProS_Glut
+17,017 CA3 Glut,CA3 Glut,CA3_Glut,CA3_Glut,017_CA3_Glut,CA3_Glut
+18,018 L2 IT PPP-APr Glut,L2 IT PPP-APr Glut,L2_IT_PPP-APr_Glut,L2_IT_PPP-APr_Glut,018_L2_IT_PPP-APr_Glut,L2_IT_PPP-APr_Glut
+19,019 L2/3 IT PPP Glut,L2/3 IT PPP Glut,L2.3_IT_PPP_Glut,L2-3_IT_PPP_Glut,019_L2.3_IT_PPP_Glut,L2_3_IT_PPP_Glut
+20,020 L2/3 IT RSP Glut,L2/3 IT RSP Glut,L2.3_IT_RSP_Glut,L2-3_IT_RSP_Glut,020_L2.3_IT_RSP_Glut,L2_3_IT_RSP_Glut
+21,021 L4 RSP-ACA Glut,L4 RSP-ACA Glut,L4_RSP-ACA_Glut,L4_RSP-ACA_Glut,021_L4_RSP-ACA_Glut,L4_RSP-ACA_Glut
+22,022 L5 ET CTX Glut,L5 ET CTX Glut,L5_ET_CTX_Glut,L5_ET_CTX_Glut,022_L5_ET_CTX_Glut,L5_ET_CTX_Glut
+23,023 SUB-ProS Glut,SUB-ProS Glut,SUB-ProS_Glut,SUB-ProS_Glut,023_SUB-ProS_Glut,SUB-ProS_Glut
+24,024 L5 PPP Glut,L5 PPP Glut,L5_PPP_Glut,L5_PPP_Glut,024_L5_PPP_Glut,L5_PPP_Glut
+25,025 CA2-FC-IG Glut,CA2-FC-IG Glut,CA2-FC-IG_Glut,CA2-FC-IG_Glut,025_CA2-FC-IG_Glut,CA2-FC-IG_Glut
+26,026 NLOT Rho Glut,NLOT Rho Glut,NLOT_Rho_Glut,NLOT_Rho_Glut,026_NLOT_Rho_Glut,NLOT_Rho_Glut
+27,027 L6b EPd Glut,L6b EPd Glut,L6b_EPd_Glut,L6b_EPd_Glut,027_L6b_EPd_Glut,L6b_EPd_Glut
+28,028 L6b/CT ENT Glut,L6b/CT ENT Glut,L6b.CT_ENT_Glut,L6b-CT_ENT_Glut,028_L6b.CT_ENT_Glut,L6b_CT_ENT_Glut
+29,029 L6b CTX Glut,L6b CTX Glut,L6b_CTX_Glut,L6b_CTX_Glut,029_L6b_CTX_Glut,L6b_CTX_Glut
+30,030 L6 CT CTX Glut,L6 CT CTX Glut,L6_CT_CTX_Glut,L6_CT_CTX_Glut,030_L6_CT_CTX_Glut,L6_CT_CTX_Glut
+31,031 CT SUB Glut,CT SUB Glut,CT_SUB_Glut,CT_SUB_Glut,031_CT_SUB_Glut,CT_SUB_Glut
+32,032 L5 NP CTX Glut,L5 NP CTX Glut,L5_NP_CTX_Glut,L5_NP_CTX_Glut,032_L5_NP_CTX_Glut,L5_NP_CTX_Glut
+33,033 NP SUB Glut,NP SUB Glut,NP_SUB_Glut,NP_SUB_Glut,033_NP_SUB_Glut,NP_SUB_Glut
+34,034 NP PPP Glut,NP PPP Glut,NP_PPP_Glut,NP_PPP_Glut,034_NP_PPP_Glut,NP_PPP_Glut
+35,035 OB Eomes Ms4a15 Glut,OB Eomes Ms4a15 Glut,OB_Eomes_Ms4a15_Glut,OB_Eomes_Ms4a15_Glut,035_OB_Eomes_Ms4a15_Glut,OB_Eomes_Ms4a15_Glut
+36,036 HPF CR Glut,HPF CR Glut,HPF_CR_Glut,HPF_CR_Glut,036_HPF_CR_Glut,HPF_CR_Glut
+37,037 DG Glut,DG Glut,DG_Glut,DG_Glut,037_DG_Glut,DG_Glut
+38,038 DG-PIR Ex IMN,DG-PIR Ex IMN,DG-PIR_Ex_IMN,DG-PIR_Ex_IMN,038_DG-PIR_Ex_IMN,DG-PIR_Ex_IMN
+39,039 OB Meis2 Thsd7b Gaba,OB Meis2 Thsd7b Gaba,OB_Meis2_Thsd7b_Gaba,OB_Meis2_Thsd7b_Gaba,039_OB_Meis2_Thsd7b_Gaba,OB_Meis2_Thsd7b_Gaba
+40,040 OB Trdn Gaba,OB Trdn Gaba,OB_Trdn_Gaba,OB_Trdn_Gaba,040_OB_Trdn_Gaba,OB_Trdn_Gaba
+41,041 OB-in Frmd7 Gaba,OB-in Frmd7 Gaba,OB-in_Frmd7_Gaba,OB-in_Frmd7_Gaba,041_OB-in_Frmd7_Gaba,OB-in_Frmd7_Gaba
+42,042 OB-out Frmd7 Gaba,OB-out Frmd7 Gaba,OB-out_Frmd7_Gaba,OB-out_Frmd7_Gaba,042_OB-out_Frmd7_Gaba,OB-out_Frmd7_Gaba
+43,043 OB-mi Frmd7 Gaba,OB-mi Frmd7 Gaba,OB-mi_Frmd7_Gaba,OB-mi_Frmd7_Gaba,043_OB-mi_Frmd7_Gaba,OB-mi_Frmd7_Gaba
+44,044 OB Dopa-Gaba,OB Dopa-Gaba,OB_Dopa-Gaba,OB_Dopa-Gaba,044_OB_Dopa-Gaba,OB_Dopa-Gaba
+45,045 OB-STR-CTX Inh IMN,OB-STR-CTX Inh IMN,OB-STR-CTX_Inh_IMN,OB-STR-CTX_Inh_IMN,045_OB-STR-CTX_Inh_IMN,OB-STR-CTX_Inh_IMN
+46,046 Vip Gaba,Vip Gaba,Vip_Gaba,Vip_Gaba,046_Vip_Gaba,Vip_Gaba
+47,047 Sncg Gaba,Sncg Gaba,Sncg_Gaba,Sncg_Gaba,047_Sncg_Gaba,Sncg_Gaba
+48,048 RHP-COA Ndnf Gaba,RHP-COA Ndnf Gaba,RHP-COA_Ndnf_Gaba,RHP-COA_Ndnf_Gaba,048_RHP-COA_Ndnf_Gaba,RHP-COA_Ndnf_Gaba
+49,049 Lamp5 Gaba,Lamp5 Gaba,Lamp5_Gaba,Lamp5_Gaba,049_Lamp5_Gaba,Lamp5_Gaba
+50,050 Lamp5 Lhx6 Gaba,Lamp5 Lhx6 Gaba,Lamp5_Lhx6_Gaba,Lamp5_Lhx6_Gaba,050_Lamp5_Lhx6_Gaba,Lamp5_Lhx6_Gaba
+51,051 Pvalb chandelier Gaba,Pvalb chandelier Gaba,Pvalb_chandelier_Gaba,Pvalb_chandelier_Gaba,051_Pvalb_chandelier_Gaba,Pvalb_chandelier_Gaba
+52,052 Pvalb Gaba,Pvalb Gaba,Pvalb_Gaba,Pvalb_Gaba,052_Pvalb_Gaba,Pvalb_Gaba
+53,053 Sst Gaba,Sst Gaba,Sst_Gaba,Sst_Gaba,053_Sst_Gaba,Sst_Gaba
+54,054 STR Prox1 Lhx6 Gaba,STR Prox1 Lhx6 Gaba,STR_Prox1_Lhx6_Gaba,STR_Prox1_Lhx6_Gaba,054_STR_Prox1_Lhx6_Gaba,STR_Prox1_Lhx6_Gaba
+55,055 STR Lhx8 Gaba,STR Lhx8 Gaba,STR_Lhx8_Gaba,STR_Lhx8_Gaba,055_STR_Lhx8_Gaba,STR_Lhx8_Gaba
+56,056 Sst Chodl Gaba,Sst Chodl Gaba,Sst_Chodl_Gaba,Sst_Chodl_Gaba,056_Sst_Chodl_Gaba,Sst_Chodl_Gaba
+57,057 NDB-SI-MA-STRv Lhx8 Gaba,NDB-SI-MA-STRv Lhx8 Gaba,NDB-SI-MA-STRv_Lhx8_Gaba,NDB-SI-MA-STRv_Lhx8_Gaba,057_NDB-SI-MA-STRv_Lhx8_Gaba,NDB-SI-MA-STRv_Lhx8_Gaba
+59,059 GPe-SI Sox6 Cyp26b1 Gaba,GPe-SI Sox6 Cyp26b1 Gaba,GPe-SI_Sox6_Cyp26b1_Gaba,GPe-SI_Sox6_Cyp26b1_Gaba,059_GPe-SI_Sox6_Cyp26b1_Gaba,GPe-SI_Sox6_Cyp26b1_Gaba
+58,058 PAL-STR Gaba-Chol,PAL-STR Gaba-Chol,PAL-STR_Gaba-Chol,PAL-STR_Gaba-Chol,058_PAL-STR_Gaba-Chol,PAL-STR_Gaba-Chol
+60,060 OT D3 Folh1 Gaba,OT D3 Folh1 Gaba,OT_D3_Folh1_Gaba,OT_D3_Folh1_Gaba,060_OT_D3_Folh1_Gaba,OT_D3_Folh1_Gaba
+61,061 STR D1 Gaba,STR D1 Gaba,STR_D1_Gaba,STR_D1_Gaba,061_STR_D1_Gaba,STR_D1_Gaba
+62,062 STR D2 Gaba,STR D2 Gaba,STR_D2_Gaba,STR_D2_Gaba,062_STR_D2_Gaba,STR_D2_Gaba
+63,063 STR D1 Sema5a Gaba,STR D1 Sema5a Gaba,STR_D1_Sema5a_Gaba,STR_D1_Sema5a_Gaba,063_STR_D1_Sema5a_Gaba,STR_D1_Sema5a_Gaba
+64,064 STR-PAL Chst9 Gaba,STR-PAL Chst9 Gaba,STR-PAL_Chst9_Gaba,STR-PAL_Chst9_Gaba,064_STR-PAL_Chst9_Gaba,STR-PAL_Chst9_Gaba
+65,065 IA Mgp Gaba,IA Mgp Gaba,IA_Mgp_Gaba,IA_Mgp_Gaba,065_IA_Mgp_Gaba,IA_Mgp_Gaba
+66,066 NDB-SI-ant Prdm12 Gaba,NDB-SI-ant Prdm12 Gaba,NDB-SI-ant_Prdm12_Gaba,NDB-SI-ant_Prdm12_Gaba,066_NDB-SI-ant_Prdm12_Gaba,NDB-SI-ant_Prdm12_Gaba
+67,067 LSX Sall3 Pax6 Gaba,LSX Sall3 Pax6 Gaba,LSX_Sall3_Pax6_Gaba,LSX_Sall3_Pax6_Gaba,067_LSX_Sall3_Pax6_Gaba,LSX_Sall3_Pax6_Gaba
+68,068 LSX Otx2 Gaba,LSX Otx2 Gaba,LSX_Otx2_Gaba,LSX_Otx2_Gaba,068_LSX_Otx2_Gaba,LSX_Otx2_Gaba
+69,069 LSX Nkx2-1 Gaba,LSX Nkx2-1 Gaba,LSX_Nkx2-1_Gaba,LSX_Nkx2-1_Gaba,069_LSX_Nkx2-1_Gaba,LSX_Nkx2-1_Gaba
+70,070 LSX Prdm12 Slit2 Gaba,LSX Prdm12 Slit2 Gaba,LSX_Prdm12_Slit2_Gaba,LSX_Prdm12_Slit2_Gaba,070_LSX_Prdm12_Slit2_Gaba,LSX_Prdm12_Slit2_Gaba
+71,071 LSX Prdm12 Zeb2 Gaba,LSX Prdm12 Zeb2 Gaba,LSX_Prdm12_Zeb2_Gaba,LSX_Prdm12_Zeb2_Gaba,071_LSX_Prdm12_Zeb2_Gaba,LSX_Prdm12_Zeb2_Gaba
+72,072 LSX Sall3 Lmo1 Gaba,LSX Sall3 Lmo1 Gaba,LSX_Sall3_Lmo1_Gaba,LSX_Sall3_Lmo1_Gaba,072_LSX_Sall3_Lmo1_Gaba,LSX_Sall3_Lmo1_Gaba
+73,073 MEA-BST Sox6 Gaba,MEA-BST Sox6 Gaba,MEA-BST_Sox6_Gaba,MEA-BST_Sox6_Gaba,073_MEA-BST_Sox6_Gaba,MEA-BST_Sox6_Gaba
+74,074 MEA-BST Lhx6 Sp9 Gaba,MEA-BST Lhx6 Sp9 Gaba,MEA-BST_Lhx6_Sp9_Gaba,MEA-BST_Lhx6_Sp9_Gaba,074_MEA-BST_Lhx6_Sp9_Gaba,MEA-BST_Lhx6_Sp9_Gaba
+75,075 MEA-BST Lhx6 Nr2e1 Gaba,MEA-BST Lhx6 Nr2e1 Gaba,MEA-BST_Lhx6_Nr2e1_Gaba,MEA-BST_Lhx6_Nr2e1_Gaba,075_MEA-BST_Lhx6_Nr2e1_Gaba,MEA-BST_Lhx6_Nr2e1_Gaba
+76,076 MEA-BST Lhx6 Nfib Gaba,MEA-BST Lhx6 Nfib Gaba,MEA-BST_Lhx6_Nfib_Gaba,MEA-BST_Lhx6_Nfib_Gaba,076_MEA-BST_Lhx6_Nfib_Gaba,MEA-BST_Lhx6_Nfib_Gaba
+77,077 CEA-BST Gal Avp Gaba,CEA-BST Gal Avp Gaba,CEA-BST_Gal_Avp_Gaba,CEA-BST_Gal_Avp_Gaba,077_CEA-BST_Gal_Avp_Gaba,CEA-BST_Gal_Avp_Gaba
+78,078 SI-MA-ACB Ebf1 Bnc2 Gaba,SI-MA-ACB Ebf1 Bnc2 Gaba,SI-MA-ACB_Ebf1_Bnc2_Gaba,SI-MA-ACB_Ebf1_Bnc2_Gaba,078_SI-MA-ACB_Ebf1_Bnc2_Gaba,SI-MA-ACB_Ebf1_Bnc2_Gaba
+79,079 CEA-BST Six3 Cyp26b1 Gaba,CEA-BST Six3 Cyp26b1 Gaba,CEA-BST_Six3_Cyp26b1_Gaba,CEA-BST_Six3_Cyp26b1_Gaba,079_CEA-BST_Six3_Cyp26b1_Gaba,CEA-BST_Six3_Cyp26b1_Gaba
+80,080 CEA-AAA-BST Six3 Sp9 Gaba,CEA-AAA-BST Six3 Sp9 Gaba,CEA-AAA-BST_Six3_Sp9_Gaba,CEA-AAA-BST_Six3_Sp9_Gaba,080_CEA-AAA-BST_Six3_Sp9_Gaba,CEA-AAA-BST_Six3_Sp9_Gaba
+81,081 ACB-BST-FS D1 Gaba,ACB-BST-FS D1 Gaba,ACB-BST-FS_D1_Gaba,ACB-BST-FS_D1_Gaba,081_ACB-BST-FS_D1_Gaba,ACB-BST-FS_D1_Gaba
+82,082 CEA-BST Ebf1 Pdyn Gaba,CEA-BST Ebf1 Pdyn Gaba,CEA-BST_Ebf1_Pdyn_Gaba,CEA-BST_Ebf1_Pdyn_Gaba,082_CEA-BST_Ebf1_Pdyn_Gaba,CEA-BST_Ebf1_Pdyn_Gaba
+83,083 CEA-BST Rai14 Pdyn Crh Gaba,CEA-BST Rai14 Pdyn Crh Gaba,CEA-BST_Rai14_Pdyn_Crh_Gaba,CEA-BST_Rai14_Pdyn_Crh_Gaba,083_CEA-BST_Rai14_Pdyn_Crh_Gaba,CEA-BST_Rai14_Pdyn_Crh_Gaba
+84,084 BST-SI-AAA Six3 Slc22a3 Gaba,BST-SI-AAA Six3 Slc22a3 Gaba,BST-SI-AAA_Six3_Slc22a3_Gaba,BST-SI-AAA_Six3_Slc22a3_Gaba,084_BST-SI-AAA_Six3_Slc22a3_Gaba,BST-SI-AAA_Six3_Slc22a3_Gaba
+85,085 SI-MPO-LPO Lhx8 Gaba,SI-MPO-LPO Lhx8 Gaba,SI-MPO-LPO_Lhx8_Gaba,SI-MPO-LPO_Lhx8_Gaba,085_SI-MPO-LPO_Lhx8_Gaba,SI-MPO-LPO_Lhx8_Gaba
+86,086 MPO-ADP Lhx8 Gaba,MPO-ADP Lhx8 Gaba,MPO-ADP_Lhx8_Gaba,MPO-ADP_Lhx8_Gaba,086_MPO-ADP_Lhx8_Gaba,MPO-ADP_Lhx8_Gaba
+87,087 MPN-MPO-LPO Lhx6 Zfhx3 Gaba,MPN-MPO-LPO Lhx6 Zfhx3 Gaba,MPN-MPO-LPO_Lhx6_Zfhx3_Gaba,MPN-MPO-LPO_Lhx6_Zfhx3_Gaba,087_MPN-MPO-LPO_Lhx6_Zfhx3_Gaba,MPN-MPO-LPO_Lhx6_Zfhx3_Gaba
+88,088 BST Tac2 Gaba,BST Tac2 Gaba,BST_Tac2_Gaba,BST_Tac2_Gaba,088_BST_Tac2_Gaba,BST_Tac2_Gaba
+89,089 PVR Six3 Sox3 Gaba,PVR Six3 Sox3 Gaba,PVR_Six3_Sox3_Gaba,PVR_Six3_Sox3_Gaba,089_PVR_Six3_Sox3_Gaba,PVR_Six3_Sox3_Gaba
+90,090 BST-MPN Six3 Nrgn Gaba,BST-MPN Six3 Nrgn Gaba,BST-MPN_Six3_Nrgn_Gaba,BST-MPN_Six3_Nrgn_Gaba,090_BST-MPN_Six3_Nrgn_Gaba,BST-MPN_Six3_Nrgn_Gaba
+91,091 ARH-PVi Six6 Dopa-Gaba,ARH-PVi Six6 Dopa-Gaba,ARH-PVi_Six6_Dopa-Gaba,ARH-PVi_Six6_Dopa-Gaba,091_ARH-PVi_Six6_Dopa-Gaba,ARH-PVi_Six6_Dopa-Gaba
+92,092 TMv-PMv Tbx3 Hist-Gaba,TMv-PMv Tbx3 Hist-Gaba,TMv-PMv_Tbx3_Hist-Gaba,TMv-PMv_Tbx3_Hist-Gaba,092_TMv-PMv_Tbx3_Hist-Gaba,TMv-PMv_Tbx3_Hist-Gaba
+93,093 RT-ZI Gnb3 Gaba,RT-ZI Gnb3 Gaba,RT-ZI_Gnb3_Gaba,RT-ZI_Gnb3_Gaba,093_RT-ZI_Gnb3_Gaba,RT-ZI_Gnb3_Gaba
+94,094 SCH Six6 Cdc14a Gaba,SCH Six6 Cdc14a Gaba,SCH_Six6_Cdc14a_Gaba,SCH_Six6_Cdc14a_Gaba,094_SCH_Six6_Cdc14a_Gaba,SCH_Six6_Cdc14a_Gaba
+95,095 DMH Prdm13 Gaba,DMH Prdm13 Gaba,DMH_Prdm13_Gaba,DMH_Prdm13_Gaba,095_DMH_Prdm13_Gaba,DMH_Prdm13_Gaba
+96,096 PVHd Gsc Gaba,PVHd Gsc Gaba,PVHd_Gsc_Gaba,PVHd_Gsc_Gaba,096_PVHd_Gsc_Gaba,PVHd_Gsc_Gaba
+97,097 PVHd-SBPV Six3 Prox1 Gaba,PVHd-SBPV Six3 Prox1 Gaba,PVHd-SBPV_Six3_Prox1_Gaba,PVHd-SBPV_Six3_Prox1_Gaba,097_PVHd-SBPV_Six3_Prox1_Gaba,PVHd-SBPV_Six3_Prox1_Gaba
+98,098 AHN-SBPV-PVHd Pdrm12 Gaba,AHN-SBPV-PVHd Pdrm12 Gaba,AHN-SBPV-PVHd_Pdrm12_Gaba,AHN-SBPV-PVHd_Pdrm12_Gaba,098_AHN-SBPV-PVHd_Pdrm12_Gaba,AHN-SBPV-PVHd_Pdrm12_Gaba
+99,099 SBPV-PVa Six6 Satb2 Gaba,SBPV-PVa Six6 Satb2 Gaba,SBPV-PVa_Six6_Satb2_Gaba,SBPV-PVa_Six6_Satb2_Gaba,099_SBPV-PVa_Six6_Satb2_Gaba,SBPV-PVa_Six6_Satb2_Gaba
+100,100 AHN Onecut3 Gaba,AHN Onecut3 Gaba,AHN_Onecut3_Gaba,AHN_Onecut3_Gaba,100_AHN_Onecut3_Gaba,AHN_Onecut3_Gaba
+101,101 ZI Pax6 Gaba,ZI Pax6 Gaba,ZI_Pax6_Gaba,ZI_Pax6_Gaba,101_ZI_Pax6_Gaba,ZI_Pax6_Gaba
+102,102 DMH-LHA Gsx1 Gaba,DMH-LHA Gsx1 Gaba,DMH-LHA_Gsx1_Gaba,DMH-LHA_Gsx1_Gaba,102_DMH-LHA_Gsx1_Gaba,DMH-LHA_Gsx1_Gaba
+103,103 PVHd-DMH Lhx6 Gaba,PVHd-DMH Lhx6 Gaba,PVHd-DMH_Lhx6_Gaba,PVHd-DMH_Lhx6_Gaba,103_PVHd-DMH_Lhx6_Gaba,PVHd-DMH_Lhx6_Gaba
+104,104 TU-ARH Otp Six6 Gaba,TU-ARH Otp Six6 Gaba,TU-ARH_Otp_Six6_Gaba,TU-ARH_Otp_Six6_Gaba,104_TU-ARH_Otp_Six6_Gaba,TU-ARH_Otp_Six6_Gaba
+105,105 TMd-DMH Foxd2 Gaba,TMd-DMH Foxd2 Gaba,TMd-DMH_Foxd2_Gaba,TMd-DMH_Foxd2_Gaba,105_TMd-DMH_Foxd2_Gaba,TMd-DMH_Foxd2_Gaba
+106,106 PVpo-VMPO-MPN Hmx2 Gaba,PVpo-VMPO-MPN Hmx2 Gaba,PVpo-VMPO-MPN_Hmx2_Gaba,PVpo-VMPO-MPN_Hmx2_Gaba,106_PVpo-VMPO-MPN_Hmx2_Gaba,PVpo-VMPO-MPN_Hmx2_Gaba
+107,107 DMH Hmx2 Gaba,DMH Hmx2 Gaba,DMH_Hmx2_Gaba,DMH_Hmx2_Gaba,107_DMH_Hmx2_Gaba,DMH_Hmx2_Gaba
+108,108 ARH-PVp Tbx3 Gaba,ARH-PVp Tbx3 Gaba,ARH-PVp_Tbx3_Gaba,ARH-PVp_Tbx3_Gaba,108_ARH-PVp_Tbx3_Gaba,ARH-PVp_Tbx3_Gaba
+109,109 LGv-ZI Otx2 Gaba,LGv-ZI Otx2 Gaba,LGv-ZI_Otx2_Gaba,LGv-ZI_Otx2_Gaba,109_LGv-ZI_Otx2_Gaba,LGv-ZI_Otx2_Gaba
+110,110 BST-po Iigp1 Glut,BST-po Iigp1 Glut,BST-po_Iigp1_Glut,BST-po_Iigp1_Glut,110_BST-po_Iigp1_Glut,BST-po_Iigp1_Glut
+111,111 TRS-BAC Sln Glut,TRS-BAC Sln Glut,TRS-BAC_Sln_Glut,TRS-BAC_Sln_Glut,111_TRS-BAC_Sln_Glut,TRS-BAC_Sln_Glut
+112,112 GPi Tbr1 Cngb3 Gaba-Glut,GPi Tbr1 Cngb3 Gaba-Glut,GPi_Tbr1_Cngb3_Gaba-Glut,GPi_Tbr1_Cngb3_Gaba-Glut,112_GPi_Tbr1_Cngb3_Gaba-Glut,GPi_Tbr1_Cngb3_Gaba-Glut
+113,113 MEA-COA-BMA Ccdc42 Glut,MEA-COA-BMA Ccdc42 Glut,MEA-COA-BMA_Ccdc42_Glut,MEA-COA-BMA_Ccdc42_Glut,113_MEA-COA-BMA_Ccdc42_Glut,MEA-COA-BMA_Ccdc42_Glut
+114,114 COAa-PAA-MEA Barhl2 Glut,COAa-PAA-MEA Barhl2 Glut,COAa-PAA-MEA_Barhl2_Glut,COAa-PAA-MEA_Barhl2_Glut,114_COAa-PAA-MEA_Barhl2_Glut,COAa-PAA-MEA_Barhl2_Glut
+115,115 MS-SF Bsx Glut,MS-SF Bsx Glut,MS-SF_Bsx_Glut,MS-SF_Bsx_Glut,115_MS-SF_Bsx_Glut,MS-SF_Bsx_Glut
+116,116 AVPV-MEPO-SFO Tbr1 Glut,AVPV-MEPO-SFO Tbr1 Glut,AVPV-MEPO-SFO_Tbr1_Glut,AVPV-MEPO-SFO_Tbr1_Glut,116_AVPV-MEPO-SFO_Tbr1_Glut,AVPV-MEPO-SFO_Tbr1_Glut
+117,117 LHA Barhl2 Glut,LHA Barhl2 Glut,LHA_Barhl2_Glut,LHA_Barhl2_Glut,117_LHA_Barhl2_Glut,LHA_Barhl2_Glut
+118,118 ADP-MPO Trp73 Glut,ADP-MPO Trp73 Glut,ADP-MPO_Trp73_Glut,ADP-MPO_Trp73_Glut,118_ADP-MPO_Trp73_Glut,ADP-MPO_Trp73_Glut
+119,119 SI-MA-LPO-LHA Skor1 Glut,SI-MA-LPO-LHA Skor1 Glut,SI-MA-LPO-LHA_Skor1_Glut,SI-MA-LPO-LHA_Skor1_Glut,119_SI-MA-LPO-LHA_Skor1_Glut,SI-MA-LPO-LHA_Skor1_Glut
+120,120 MEA Otp Foxp2 Glut,MEA Otp Foxp2 Glut,MEA_Otp_Foxp2_Glut,MEA_Otp_Foxp2_Glut,120_MEA_Otp_Foxp2_Glut,MEA_Otp_Foxp2_Glut
+121,121 MEA-BST Otp Zic2 Glut,MEA-BST Otp Zic2 Glut,MEA-BST_Otp_Zic2_Glut,MEA-BST_Otp_Zic2_Glut,121_MEA-BST_Otp_Zic2_Glut,MEA-BST_Otp_Zic2_Glut
+122,122 LHA-MEA Otp Glut,LHA-MEA Otp Glut,LHA-MEA_Otp_Glut,LHA-MEA_Otp_Glut,122_LHA-MEA_Otp_Glut,LHA-MEA_Otp_Glut
+123,123 DMH Nkx2-4 Glut,DMH Nkx2-4 Glut,DMH_Nkx2-4_Glut,DMH_Nkx2-4_Glut,123_DMH_Nkx2-4_Glut,DMH_Nkx2-4_Glut
+124,124 MPN-MPO-PVpo Hmx2 Glut,MPN-MPO-PVpo Hmx2 Glut,MPN-MPO-PVpo_Hmx2_Glut,MPN-MPO-PVpo_Hmx2_Glut,124_MPN-MPO-PVpo_Hmx2_Glut,MPN-MPO-PVpo_Hmx2_Glut
+125,125 DMH Hmx2 Glut,DMH Hmx2 Glut,DMH_Hmx2_Glut,DMH_Hmx2_Glut,125_DMH_Hmx2_Glut,DMH_Hmx2_Glut
+126,126 ARH-PVp Tbx3 Glut,ARH-PVp Tbx3 Glut,ARH-PVp_Tbx3_Glut,ARH-PVp_Tbx3_Glut,126_ARH-PVp_Tbx3_Glut,ARH-PVp_Tbx3_Glut
+127,127 DMH-LHA Vgll2 Glut,DMH-LHA Vgll2 Glut,DMH-LHA_Vgll2_Glut,DMH-LHA_Vgll2_Glut,127_DMH-LHA_Vgll2_Glut,DMH-LHA_Vgll2_Glut
+128,128 VMH Fezf1 Glut,VMH Fezf1 Glut,VMH_Fezf1_Glut,VMH_Fezf1_Glut,128_VMH_Fezf1_Glut,VMH_Fezf1_Glut
+129,129 VMH Nr5a1 Glut,VMH Nr5a1 Glut,VMH_Nr5a1_Glut,VMH_Nr5a1_Glut,129_VMH_Nr5a1_Glut,VMH_Nr5a1_Glut
+130,130 LHA Pmch Glut,LHA Pmch Glut,LHA_Pmch_Glut,LHA_Pmch_Glut,130_LHA_Pmch_Glut,LHA_Pmch_Glut
+131,131 LHA-AHN-PVH Otp Trh Glut,LHA-AHN-PVH Otp Trh Glut,LHA-AHN-PVH_Otp_Trh_Glut,LHA-AHN-PVH_Otp_Trh_Glut,131_LHA-AHN-PVH_Otp_Trh_Glut,LHA-AHN-PVH_Otp_Trh_Glut
+132,132 AHN-RCH-LHA Otp Fezf1 Glut,AHN-RCH-LHA Otp Fezf1 Glut,AHN-RCH-LHA_Otp_Fezf1_Glut,AHN-RCH-LHA_Otp_Fezf1_Glut,132_AHN-RCH-LHA_Otp_Fezf1_Glut,AHN-RCH-LHA_Otp_Fezf1_Glut
+133,133 PVH-SO-PVa Otp Glut,PVH-SO-PVa Otp Glut,PVH-SO-PVa_Otp_Glut,PVH-SO-PVa_Otp_Glut,133_PVH-SO-PVa_Otp_Glut,PVH-SO-PVa_Otp_Glut
+134,134 PH-ant-LHA Otp Bsx Glut,PH-ant-LHA Otp Bsx Glut,PH-ant-LHA_Otp_Bsx_Glut,PH-ant-LHA_Otp_Bsx_Glut,134_PH-ant-LHA_Otp_Bsx_Glut,PH-ant-LHA_Otp_Bsx_Glut
+135,135 STN-PSTN Pitx2 Glut,STN-PSTN Pitx2 Glut,STN-PSTN_Pitx2_Glut,STN-PSTN_Pitx2_Glut,135_STN-PSTN_Pitx2_Glut,STN-PSTN_Pitx2_Glut
+136,136 PMv-TMv Pitx2 Glut,PMv-TMv Pitx2 Glut,PMv-TMv_Pitx2_Glut,PMv-TMv_Pitx2_Glut,136_PMv-TMv_Pitx2_Glut,PMv-TMv_Pitx2_Glut
+137,137 PH-an Pitx2 Glut,PH-an Pitx2 Glut,PH-an_Pitx2_Glut,PH-an_Pitx2_Glut,137_PH-an_Pitx2_Glut,PH-an_Pitx2_Glut
+138,138 PH Pitx2 Glut,PH Pitx2 Glut,PH_Pitx2_Glut,PH_Pitx2_Glut,138_PH_Pitx2_Glut,PH_Pitx2_Glut
+139,139 PH-LHA Foxb1 Glut,PH-LHA Foxb1 Glut,PH-LHA_Foxb1_Glut,PH-LHA_Foxb1_Glut,139_PH-LHA_Foxb1_Glut,PH-LHA_Foxb1_Glut
+140,140 PMd-LHA Foxb1 Glut,PMd-LHA Foxb1 Glut,PMd-LHA_Foxb1_Glut,PMd-LHA_Foxb1_Glut,140_PMd-LHA_Foxb1_Glut,PMd-LHA_Foxb1_Glut
+141,141 PH-SUM Foxa1 Glut,PH-SUM Foxa1 Glut,PH-SUM_Foxa1_Glut,PH-SUM_Foxa1_Glut,141_PH-SUM_Foxa1_Glut,PH-SUM_Foxa1_Glut
+142,142 HY Gnrh1 Glut,HY Gnrh1 Glut,HY_Gnrh1_Glut,HY_Gnrh1_Glut,142_HY_Gnrh1_Glut,HY_Gnrh1_Glut
+143,143 MM-ant Foxb1 Glut,MM-ant Foxb1 Glut,MM-ant_Foxb1_Glut,MM-ant_Foxb1_Glut,143_MM-ant_Foxb1_Glut,MM-ant_Foxb1_Glut
+144,144 MM Foxb1 Glut,MM Foxb1 Glut,MM_Foxb1_Glut,MM_Foxb1_Glut,144_MM_Foxb1_Glut,MM_Foxb1_Glut
+145,145 MH Tac2 Glut,MH Tac2 Glut,MH_Tac2_Glut,MH_Tac2_Glut,145_MH_Tac2_Glut,MH_Tac2_Glut
+146,146 LH Pou4f1 Sox1 Glut,LH Pou4f1 Sox1 Glut,LH_Pou4f1_Sox1_Glut,LH_Pou4f1_Sox1_Glut,146_LH_Pou4f1_Sox1_Glut,LH_Pou4f1_Sox1_Glut
+147,147 AD Serpinb7 Glut,AD Serpinb7 Glut,AD_Serpinb7_Glut,AD_Serpinb7_Glut,147_AD_Serpinb7_Glut,AD_Serpinb7_Glut
+148,148 AV Col27a1 Glut,AV Col27a1 Glut,AV_Col27a1_Glut,AV_Col27a1_Glut,148_AV_Col27a1_Glut,AV_Col27a1_Glut
+149,149 PVT-PT Ntrk1 Glut,PVT-PT Ntrk1 Glut,PVT-PT_Ntrk1_Glut,PVT-PT_Ntrk1_Glut,149_PVT-PT_Ntrk1_Glut,PVT-PT_Ntrk1_Glut
+150,150 CM-IAD-CL-PCN Sema5b Glut,CM-IAD-CL-PCN Sema5b Glut,CM-IAD-CL-PCN_Sema5b_Glut,CM-IAD-CL-PCN_Sema5b_Glut,150_CM-IAD-CL-PCN_Sema5b_Glut,CM-IAD-CL-PCN_Sema5b_Glut
+151,151 TH Prkcd Grin2c Glut,TH Prkcd Grin2c Glut,TH_Prkcd_Grin2c_Glut,TH_Prkcd_Grin2c_Glut,151_TH_Prkcd_Grin2c_Glut,TH_Prkcd_Grin2c_Glut
+152,152 RE-Xi Nox4 Glut,RE-Xi Nox4 Glut,RE-Xi_Nox4_Glut,RE-Xi_Nox4_Glut,152_RE-Xi_Nox4_Glut,RE-Xi_Nox4_Glut
+153,153 MG-POL-SGN Nts Glut,MG-POL-SGN Nts Glut,MG-POL-SGN_Nts_Glut,MG-POL-SGN_Nts_Glut,153_MG-POL-SGN_Nts_Glut,MG-POL-SGN_Nts_Glut
+154,154 PF Fzd5 Glut,PF Fzd5 Glut,PF_Fzd5_Glut,PF_Fzd5_Glut,154_PF_Fzd5_Glut,PF_Fzd5_Glut
+155,155 PRC-PAG Pax6 Glut,PRC-PAG Pax6 Glut,PRC-PAG_Pax6_Glut,PRC-PAG_Pax6_Glut,155_PRC-PAG_Pax6_Glut,PRC-PAG_Pax6_Glut
+156,156 MB-ant-ve Dmrta2 Glut,MB-ant-ve Dmrta2 Glut,MB-ant-ve_Dmrta2_Glut,MB-ant-ve_Dmrta2_Glut,156_MB-ant-ve_Dmrta2_Glut,MB-ant-ve_Dmrta2_Glut
+157,157 RN Spp1 Glut,RN Spp1 Glut,RN_Spp1_Glut,RN_Spp1_Glut,157_RN_Spp1_Glut,RN_Spp1_Glut
+158,158 MRN-PAG Nkx6-1 Glut,MRN-PAG Nkx6-1 Glut,MRN-PAG_Nkx6-1_Glut,MRN-PAG_Nkx6-1_Glut,158_MRN-PAG_Nkx6-1_Glut,MRN-PAG_Nkx6-1_Glut
+159,159 IF-RL-CLI-PAG Foxa1 Glut,IF-RL-CLI-PAG Foxa1 Glut,IF-RL-CLI-PAG_Foxa1_Glut,IF-RL-CLI-PAG_Foxa1_Glut,159_IF-RL-CLI-PAG_Foxa1_Glut,IF-RL-CLI-PAG_Foxa1_Glut
+160,160 PAG-SC Neurod2 Meis2 Glut,PAG-SC Neurod2 Meis2 Glut,PAG-SC_Neurod2_Meis2_Glut,PAG-SC_Neurod2_Meis2_Glut,160_PAG-SC_Neurod2_Meis2_Glut,PAG-SC_Neurod2_Meis2_Glut
+161,161 PAG Pou4f3 Glut,PAG Pou4f3 Glut,PAG_Pou4f3_Glut,PAG_Pou4f3_Glut,161_PAG_Pou4f3_Glut,PAG_Pou4f3_Glut
+162,162 CUN Evx2 Lhx2 Glut,CUN Evx2 Lhx2 Glut,CUN_Evx2_Lhx2_Glut,CUN_Evx2_Lhx2_Glut,162_CUN_Evx2_Lhx2_Glut,CUN_Evx2_Lhx2_Glut
+163,163 APN C1ql2 Glut,APN C1ql2 Glut,APN_C1ql2_Glut,APN_C1ql2_Glut,163_APN_C1ql2_Glut,APN_C1ql2_Glut
+164,164 APN C1ql4 Glut,APN C1ql4 Glut,APN_C1ql4_Glut,APN_C1ql4_Glut,164_APN_C1ql4_Glut,APN_C1ql4_Glut
+165,165 PAG-MRN Pou3f1 Glut,PAG-MRN Pou3f1 Glut,PAG-MRN_Pou3f1_Glut,PAG-MRN_Pou3f1_Glut,165_PAG-MRN_Pou3f1_Glut,PAG-MRN_Pou3f1_Glut
+166,166 MRN Pou3f1 C1ql4 Glut,MRN Pou3f1 C1ql4 Glut,MRN_Pou3f1_C1ql4_Glut,MRN_Pou3f1_C1ql4_Glut,166_MRN_Pou3f1_C1ql4_Glut,MRN_Pou3f1_C1ql4_Glut
+167,167 PRC-PAG Tcf7l2 Irx2 Glut,PRC-PAG Tcf7l2 Irx2 Glut,PRC-PAG_Tcf7l2_Irx2_Glut,PRC-PAG_Tcf7l2_Irx2_Glut,167_PRC-PAG_Tcf7l2_Irx2_Glut,PRC-PAG_Tcf7l2_Irx2_Glut
+168,168 SPA-SPFm-SPFp-POL-PIL-PoT Sp9 Glut,SPA-SPFm-SPFp-POL-PIL-PoT Sp9 Glut,SPA-SPFm-SPFp-POL-PIL-PoT_Sp9_Glut,SPA-SPFm-SPFp-POL-PIL-PoT_Sp9_Glut,168_SPA-SPFm-SPFp-POL-PIL-PoT_Sp9_Glut,SPA-SPFm-SPFp-POL-PIL-PoT_Sp9_Glut
+169,169 PAG-SC Pou4f1 Zic1 Glut,PAG-SC Pou4f1 Zic1 Glut,PAG-SC_Pou4f1_Zic1_Glut,PAG-SC_Pou4f1_Zic1_Glut,169_PAG-SC_Pou4f1_Zic1_Glut,PAG-SC_Pou4f1_Zic1_Glut
+170,170 PAG-MRN Tfap2b Glut,PAG-MRN Tfap2b Glut,PAG-MRN_Tfap2b_Glut,PAG-MRN_Tfap2b_Glut,170_PAG-MRN_Tfap2b_Glut,PAG-MRN_Tfap2b_Glut
+171,171 PAG Pou4f1 Bnc2 Glut,PAG Pou4f1 Bnc2 Glut,PAG_Pou4f1_Bnc2_Glut,PAG_Pou4f1_Bnc2_Glut,171_PAG_Pou4f1_Bnc2_Glut,PAG_Pou4f1_Bnc2_Glut
+172,172 PAG Pou4f1 Ebf2 Glut,PAG Pou4f1 Ebf2 Glut,PAG_Pou4f1_Ebf2_Glut,PAG_Pou4f1_Ebf2_Glut,172_PAG_Pou4f1_Ebf2_Glut,PAG_Pou4f1_Ebf2_Glut
+173,173 PAG Pou4f2 Glut,PAG Pou4f2 Glut,PAG_Pou4f2_Glut,PAG_Pou4f2_Glut,173_PAG_Pou4f2_Glut,PAG_Pou4f2_Glut
+174,174 PAG Pou4f2 Mesi2 Glut,PAG Pou4f2 Mesi2 Glut,PAG_Pou4f2_Mesi2_Glut,PAG_Pou4f2_Mesi2_Glut,174_PAG_Pou4f2_Mesi2_Glut,PAG_Pou4f2_Mesi2_Glut
+175,175 SC Bnc2 Glut,SC Bnc2 Glut,SC_Bnc2_Glut,SC_Bnc2_Glut,175_SC_Bnc2_Glut,SC_Bnc2_Glut
+176,176 SCig Foxb1 Glut,SCig Foxb1 Glut,SCig_Foxb1_Glut,SCig_Foxb1_Glut,176_SCig_Foxb1_Glut,SCig_Foxb1_Glut
+177,177 SCig-an-PPT Foxb1 Glut,SCig-an-PPT Foxb1 Glut,SCig-an-PPT_Foxb1_Glut,SCig-an-PPT_Foxb1_Glut,177_SCig-an-PPT_Foxb1_Glut,SCig-an-PPT_Foxb1_Glut
+178,178 SCig Foxb1 Otx2 Glut,SCig Foxb1 Otx2 Glut,SCig_Foxb1_Otx2_Glut,SCig_Foxb1_Otx2_Glut,178_SCig_Foxb1_Otx2_Glut,SCig_Foxb1_Otx2_Glut
+179,179 SCdg-PAG Tfap2b Glut,SCdg-PAG Tfap2b Glut,SCdg-PAG_Tfap2b_Glut,SCdg-PAG_Tfap2b_Glut,179_SCdg-PAG_Tfap2b_Glut,SCdg-PAG_Tfap2b_Glut
+180,180 SCiw Pitx2 Glut,SCiw Pitx2 Glut,SCiw_Pitx2_Glut,SCiw_Pitx2_Glut,180_SCiw_Pitx2_Glut,SCiw_Pitx2_Glut
+181,181 IC Tfap2d Maf Glut,IC Tfap2d Maf Glut,IC_Tfap2d_Maf_Glut,IC_Tfap2d_Maf_Glut,181_IC_Tfap2d_Maf_Glut,IC_Tfap2d_Maf_Glut
+182,182 CUN-PPN Evx2 Meis2 Glut,CUN-PPN Evx2 Meis2 Glut,CUN-PPN_Evx2_Meis2_Glut,CUN-PPN_Evx2_Meis2_Glut,182_CUN-PPN_Evx2_Meis2_Glut,CUN-PPN_Evx2_Meis2_Glut
+183,183 PBG Mtnr1a Glut-Chol,PBG Mtnr1a Glut-Chol,PBG_Mtnr1a_Glut-Chol,PBG_Mtnr1a_Glut-Chol,183_PBG_Mtnr1a_Glut-Chol,PBG_Mtnr1a_Glut-Chol
+184,184 PAG Tcf24 Glut,PAG Tcf24 Glut,PAG_Tcf24_Glut,PAG_Tcf24_Glut,184_PAG_Tcf24_Glut,PAG_Tcf24_Glut
+185,185 SCig Tfap2b Chrnb3 Glut,SCig Tfap2b Chrnb3 Glut,SCig_Tfap2b_Chrnb3_Glut,SCig_Tfap2b_Chrnb3_Glut,185_SCig_Tfap2b_Chrnb3_Glut,SCig_Tfap2b_Chrnb3_Glut
+186,186 SCop Pou4f2 Neurod2 Glut,SCop Pou4f2 Neurod2 Glut,SCop_Pou4f2_Neurod2_Glut,SCop_Pou4f2_Neurod2_Glut,186_SCop_Pou4f2_Neurod2_Glut,SCop_Pou4f2_Neurod2_Glut
+187,187 SCsg Pde5a Glut,SCsg Pde5a Glut,SCsg_Pde5a_Glut,SCsg_Pde5a_Glut,187_SCsg_Pde5a_Glut,SCsg_Pde5a_Glut
+188,188 SCop Sln Glut,SCop Sln Glut,SCop_Sln_Glut,SCop_Sln_Glut,188_SCop_Sln_Glut,SCop_Sln_Glut
+189,189 PAG Ucn Glut,PAG Ucn Glut,PAG_Ucn_Glut,PAG_Ucn_Glut,189_PAG_Ucn_Glut,PAG_Ucn_Glut
+190,190 ND-INC Foxd2 Glut,ND-INC Foxd2 Glut,ND-INC_Foxd2_Glut,ND-INC_Foxd2_Glut,190_ND-INC_Foxd2_Glut,ND-INC_Foxd2_Glut
+191,191 PAG-MRN Rln3 Gaba,PAG-MRN Rln3 Gaba,PAG-MRN_Rln3_Gaba,PAG-MRN_Rln3_Gaba,191_PAG-MRN_Rln3_Gaba,PAG-MRN_Rln3_Gaba
+192,192 PPN-CUN-PCG Otp En1 Gaba,PPN-CUN-PCG Otp En1 Gaba,PPN-CUN-PCG_Otp_En1_Gaba,PPN-CUN-PCG_Otp_En1_Gaba,192_PPN-CUN-PCG_Otp_En1_Gaba,PPN-CUN-PCG_Otp_En1_Gaba
+193,193 MRN-PPN-CUN Pax8 Gaba,MRN-PPN-CUN Pax8 Gaba,MRN-PPN-CUN_Pax8_Gaba,MRN-PPN-CUN_Pax8_Gaba,193_MRN-PPN-CUN_Pax8_Gaba,MRN-PPN-CUN_Pax8_Gaba
+194,194 MRN-VTN-PPN Pax5 Cdh23 Gaba,MRN-VTN-PPN Pax5 Cdh23 Gaba,MRN-VTN-PPN_Pax5_Cdh23_Gaba,MRN-VTN-PPN_Pax5_Cdh23_Gaba,194_MRN-VTN-PPN_Pax5_Cdh23_Gaba,MRN-VTN-PPN_Pax5_Cdh23_Gaba
+195,195 SNr-VTA Pax5 Npas1 Gaba,SNr-VTA Pax5 Npas1 Gaba,SNr-VTA_Pax5_Npas1_Gaba,SNr-VTA_Pax5_Npas1_Gaba,195_SNr-VTA_Pax5_Npas1_Gaba,SNr-VTA_Pax5_Npas1_Gaba
+196,196 PAG-PPN Pax5 Sox21 Gaba,PAG-PPN Pax5 Sox21 Gaba,PAG-PPN_Pax5_Sox21_Gaba,PAG-PPN_Pax5_Sox21_Gaba,196_PAG-PPN_Pax5_Sox21_Gaba,PAG-PPN_Pax5_Sox21_Gaba
+197,197 SNr Six3 Gaba,SNr Six3 Gaba,SNr_Six3_Gaba,SNr_Six3_Gaba,197_SNr_Six3_Gaba,SNr_Six3_Gaba
+198,198 IC Six3 En2 Gaba,IC Six3 En2 Gaba,IC_Six3_En2_Gaba,IC_Six3_En2_Gaba,198_IC_Six3_En2_Gaba,IC_Six3_En2_Gaba
+199,199 PAG-MRN-RN Foxa2 Gaba,PAG-MRN-RN Foxa2 Gaba,PAG-MRN-RN_Foxa2_Gaba,PAG-MRN-RN_Foxa2_Gaba,199_PAG-MRN-RN_Foxa2_Gaba,PAG-MRN-RN_Foxa2_Gaba
+200,200 PAG-ND-PCG Onecut1 Gaba,PAG-ND-PCG Onecut1 Gaba,PAG-ND-PCG_Onecut1_Gaba,PAG-ND-PCG_Onecut1_Gaba,200_PAG-ND-PCG_Onecut1_Gaba,PAG-ND-PCG_Onecut1_Gaba
+201,201 PAG-RN Nkx2-2 Otx1 Gaba,PAG-RN Nkx2-2 Otx1 Gaba,PAG-RN_Nkx2-2_Otx1_Gaba,PAG-RN_Nkx2-2_Otx1_Gaba,201_PAG-RN_Nkx2-2_Otx1_Gaba,PAG-RN_Nkx2-2_Otx1_Gaba
+202,202 PRT Tcf7l2 Gaba,PRT Tcf7l2 Gaba,PRT_Tcf7l2_Gaba,PRT_Tcf7l2_Gaba,202_PRT_Tcf7l2_Gaba,PRT_Tcf7l2_Gaba
+203,203 LGv-SPFp-SPFm Nkx2-2 Tcf7l2 Gaba,LGv-SPFp-SPFm Nkx2-2 Tcf7l2 Gaba,LGv-SPFp-SPFm_Nkx2-2_Tcf7l2_Gaba,LGv-SPFp-SPFm_Nkx2-2_Tcf7l2_Gaba,203_LGv-SPFp-SPFm_Nkx2-2_Tcf7l2_Gaba,LGv-SPFp-SPFm_Nkx2-2_Tcf7l2_Gaba
+204,204 SC Otx2 Gcnt4 Gaba,SC Otx2 Gcnt4 Gaba,SC_Otx2_Gcnt4_Gaba,SC_Otx2_Gcnt4_Gaba,204_SC_Otx2_Gcnt4_Gaba,SC_Otx2_Gcnt4_Gaba
+205,205 SC-PAG Lef1 Emx2 Gaba,SC-PAG Lef1 Emx2 Gaba,SC-PAG_Lef1_Emx2_Gaba,SC-PAG_Lef1_Emx2_Gaba,205_SC-PAG_Lef1_Emx2_Gaba,SC-PAG_Lef1_Emx2_Gaba
+206,206 SCm-PAG Cdh23 Gaba,SCm-PAG Cdh23 Gaba,SCm-PAG_Cdh23_Gaba,SCm-PAG_Cdh23_Gaba,206_SCm-PAG_Cdh23_Gaba,SCm-PAG_Cdh23_Gaba
+207,207 SCs Dmbx1 Gaba,SCs Dmbx1 Gaba,SCs_Dmbx1_Gaba,SCs_Dmbx1_Gaba,207_SCs_Dmbx1_Gaba,SCs_Dmbx1_Gaba
+208,208 SC Lef1 Otx2 Gaba,SC Lef1 Otx2 Gaba,SC_Lef1_Otx2_Gaba,SC_Lef1_Otx2_Gaba,208_SC_Lef1_Otx2_Gaba,SC_Lef1_Otx2_Gaba
+209,209 SCs Pax7 Nfia Gaba,SCs Pax7 Nfia Gaba,SCs_Pax7_Nfia_Gaba,SCs_Pax7_Nfia_Gaba,209_SCs_Pax7_Nfia_Gaba,SCs_Pax7_Nfia_Gaba
+210,210 PRT Mecom Gaba,PRT Mecom Gaba,PRT_Mecom_Gaba,PRT_Mecom_Gaba,210_PRT_Mecom_Gaba,PRT_Mecom_Gaba
+211,211 SC Tnnt1 Gli3 Gaba,SC Tnnt1 Gli3 Gaba,SC_Tnnt1_Gli3_Gaba,SC_Tnnt1_Gli3_Gaba,211_SC_Tnnt1_Gli3_Gaba,SC_Tnnt1_Gli3_Gaba
+212,212 SCs Lef1 Gli3 Gaba,SCs Lef1 Gli3 Gaba,SCs_Lef1_Gli3_Gaba,SCs_Lef1_Gli3_Gaba,212_SCs_Lef1_Gli3_Gaba,SCs_Lef1_Gli3_Gaba
+213,213 SCsg Gabrr2 Gaba,SCsg Gabrr2 Gaba,SCsg_Gabrr2_Gaba,SCsg_Gabrr2_Gaba,213_SCsg_Gabrr2_Gaba,SCsg_Gabrr2_Gaba
+214,214 IPN Otp Crisp1 Gaba,IPN Otp Crisp1 Gaba,IPN_Otp_Crisp1_Gaba,IPN_Otp_Crisp1_Gaba,214_IPN_Otp_Crisp1_Gaba,IPN_Otp_Crisp1_Gaba
+215,215 SNc-VTA-RAmb Foxa1 Dopa,SNc-VTA-RAmb Foxa1 Dopa,SNc-VTA-RAmb_Foxa1_Dopa,SNc-VTA-RAmb_Foxa1_Dopa,215_SNc-VTA-RAmb_Foxa1_Dopa,SNc-VTA-RAmb_Foxa1_Dopa
+216,216 MB-MY Tph2 Glut-Sero,MB-MY Tph2 Glut-Sero,MB-MY_Tph2_Glut-Sero,MB-MY_Tph2_Glut-Sero,216_MB-MY_Tph2_Glut-Sero,MB-MY_Tph2_Glut-Sero
+217,217 PB Lmx1a Glut,PB Lmx1a Glut,PB_Lmx1a_Glut,PB_Lmx1a_Glut,217_PB_Lmx1a_Glut,PB_Lmx1a_Glut
+218,218 PSV Lmx1a Trpv6 Glut,PSV Lmx1a Trpv6 Glut,PSV_Lmx1a_Trpv6_Glut,PSV_Lmx1a_Trpv6_Glut,218_PSV_Lmx1a_Trpv6_Glut,PSV_Lmx1a_Trpv6_Glut
+219,219 PB-SUT Tlx3 Lhx2 Glut,PB-SUT Tlx3 Lhx2 Glut,PB-SUT_Tlx3_Lhx2_Glut,PB-SUT_Tlx3_Lhx2_Glut,219_PB-SUT_Tlx3_Lhx2_Glut,PB-SUT_Tlx3_Lhx2_Glut
+220,220 PB Pax5 Glut,PB Pax5 Glut,PB_Pax5_Glut,PB_Pax5_Glut,220_PB_Pax5_Glut,PB_Pax5_Glut
+221,221 LDT-PCG Vsx2 Lhx4 Glut,LDT-PCG Vsx2 Lhx4 Glut,LDT-PCG_Vsx2_Lhx4_Glut,LDT-PCG_Vsx2_Lhx4_Glut,221_LDT-PCG_Vsx2_Lhx4_Glut,LDT-PCG_Vsx2_Lhx4_Glut
+222,222 PB Evx2 Glut,PB Evx2 Glut,PB_Evx2_Glut,PB_Evx2_Glut,222_PB_Evx2_Glut,PB_Evx2_Glut
+223,223 B-PB Nr4a2 Glut,B-PB Nr4a2 Glut,B-PB_Nr4a2_Glut,B-PB_Nr4a2_Glut,223_B-PB_Nr4a2_Glut,B-PB_Nr4a2_Glut
+224,224 PCG-PRNr Vsx2 Nkx6-1 Glut,PCG-PRNr Vsx2 Nkx6-1 Glut,PCG-PRNr_Vsx2_Nkx6-1_Glut,PCG-PRNr_Vsx2_Nkx6-1_Glut,224_PCG-PRNr_Vsx2_Nkx6-1_Glut,PCG-PRNr_Vsx2_Nkx6-1_Glut
+225,225 PRNc-NI-SG-RPO Vsx2 Nr4a2 Glut,PRNc-NI-SG-RPO Vsx2 Nr4a2 Glut,PRNc-NI-SG-RPO_Vsx2_Nr4a2_Glut,PRNc-NI-SG-RPO_Vsx2_Nr4a2_Glut,225_PRNc-NI-SG-RPO_Vsx2_Nr4a2_Glut,PRNc-NI-SG-RPO_Vsx2_Nr4a2_Glut
+226,226 PRNc-PARN Tlx1 Glut,PRNc-PARN Tlx1 Glut,PRNc-PARN_Tlx1_Glut,PRNc-PARN_Tlx1_Glut,226_PRNc-PARN_Tlx1_Glut,PRNc-PARN_Tlx1_Glut
+227,227 PB-PSV Phox2b Glut,PB-PSV Phox2b Glut,PB-PSV_Phox2b_Glut,PB-PSV_Phox2b_Glut,227_PB-PSV_Phox2b_Glut,PB-PSV_Phox2b_Glut
+228,228 PSV Pvalb Lhx2 Glut,PSV Pvalb Lhx2 Glut,PSV_Pvalb_Lhx2_Glut,PSV_Pvalb_Lhx2_Glut,228_PSV_Pvalb_Lhx2_Glut,PSV_Pvalb_Lhx2_Glut
+229,229 PB-NTS Phox2b Ebf3 Lmx1b Glut,PB-NTS Phox2b Ebf3 Lmx1b Glut,PB-NTS_Phox2b_Ebf3_Lmx1b_Glut,PB-NTS_Phox2b_Ebf3_Lmx1b_Glut,229_PB-NTS_Phox2b_Ebf3_Lmx1b_Glut,PB-NTS_Phox2b_Ebf3_Lmx1b_Glut
+230,230 PRNr Otp Nfib Glut,PRNr Otp Nfib Glut,PRNr_Otp_Nfib_Glut,PRNr_Otp_Nfib_Glut,230_PRNr_Otp_Nfib_Glut,PRNr_Otp_Nfib_Glut
+231,231 IPN-LDT Vsx2 Nkx6-1 Glut,IPN-LDT Vsx2 Nkx6-1 Glut,IPN-LDT_Vsx2_Nkx6-1_Glut,IPN-LDT_Vsx2_Nkx6-1_Glut,231_IPN-LDT_Vsx2_Nkx6-1_Glut,IPN-LDT_Vsx2_Nkx6-1_Glut
+232,232 LDT Vsx2 Nkx6-1 Nfib Glut,LDT Vsx2 Nkx6-1 Nfib Glut,LDT_Vsx2_Nkx6-1_Nfib_Glut,LDT_Vsx2_Nkx6-1_Nfib_Glut,232_LDT_Vsx2_Nkx6-1_Nfib_Glut,LDT_Vsx2_Nkx6-1_Nfib_Glut
+233,233 NLL-SOC Spp1 Glut,NLL-SOC Spp1 Glut,NLL-SOC_Spp1_Glut,NLL-SOC_Spp1_Glut,233_NLL-SOC_Spp1_Glut,NLL-SOC_Spp1_Glut
+234,234 MEV Ppp1r1c Glut,MEV Ppp1r1c Glut,MEV_Ppp1r1c_Glut,MEV_Ppp1r1c_Glut,234_MEV_Ppp1r1c_Glut,MEV_Ppp1r1c_Glut
+235,235 PG-TRN-LRN Fat2 Glut,PG-TRN-LRN Fat2 Glut,PG-TRN-LRN_Fat2_Glut,PG-TRN-LRN_Fat2_Glut,235_PG-TRN-LRN_Fat2_Glut,PG-TRN-LRN_Fat2_Glut
+236,236 IRN Vip Glut,IRN Vip Glut,IRN_Vip_Glut,IRN_Vip_Glut,236_IRN_Vip_Glut,IRN_Vip_Glut
+237,237 PRP-NI-PRNc-GRN Otp Glut,PRP-NI-PRNc-GRN Otp Glut,PRP-NI-PRNc-GRN_Otp_Glut,PRP-NI-PRNc-GRN_Otp_Glut,237_PRP-NI-PRNc-GRN_Otp_Glut,PRP-NI-PRNc-GRN_Otp_Glut
+238,238 NTS Phox2b Glut,NTS Phox2b Glut,NTS_Phox2b_Glut,NTS_Phox2b_Glut,238_NTS_Phox2b_Glut,NTS_Phox2b_Glut
+239,239 MARN-GRN Pyy Glut,MARN-GRN Pyy Glut,MARN-GRN_Pyy_Glut,MARN-GRN_Pyy_Glut,239_MARN-GRN_Pyy_Glut,MARN-GRN_Pyy_Glut
+240,240 MDRNv Lhx4 Qrfprl Glut,MDRNv Lhx4 Qrfprl Glut,MDRNv_Lhx4_Qrfprl_Glut,MDRNv_Lhx4_Qrfprl_Glut,240_MDRNv_Lhx4_Qrfprl_Glut,MDRNv_Lhx4_Qrfprl_Glut
+241,241 NTS Mbnl3 Glut,NTS Mbnl3 Glut,NTS_Mbnl3_Glut,NTS_Mbnl3_Glut,241_NTS_Mbnl3_Glut,NTS_Mbnl3_Glut
+242,242 PGRNd Dmbx1 Glut,PGRNd Dmbx1 Glut,PGRNd_Dmbx1_Glut,PGRNd_Dmbx1_Glut,242_PGRNd_Dmbx1_Glut,PGRNd_Dmbx1_Glut
+243,243 PGRN-PARN-MDRN Hoxb5 Glut,PGRN-PARN-MDRN Hoxb5 Glut,PGRN-PARN-MDRN_Hoxb5_Glut,PGRN-PARN-MDRN_Hoxb5_Glut,243_PGRN-PARN-MDRN_Hoxb5_Glut,PGRN-PARN-MDRN_Hoxb5_Glut
+244,244 MV-SPIV Slc6a2 Glut,MV-SPIV Slc6a2 Glut,MV-SPIV_Slc6a2_Glut,MV-SPIV_Slc6a2_Glut,244_MV-SPIV_Slc6a2_Glut,MV-SPIV_Slc6a2_Glut
+245,245 SPVI-SPVC Tlx3 Ebf3 Glut,SPVI-SPVC Tlx3 Ebf3 Glut,SPVI-SPVC_Tlx3_Ebf3_Glut,SPVI-SPVC_Tlx3_Ebf3_Glut,245_SPVI-SPVC_Tlx3_Ebf3_Glut,SPVI-SPVC_Tlx3_Ebf3_Glut
+246,246 CU-ECU-SPVI Foxb1 Glut,CU-ECU-SPVI Foxb1 Glut,CU-ECU-SPVI_Foxb1_Glut,CU-ECU-SPVI_Foxb1_Glut,246_CU-ECU-SPVI_Foxb1_Glut,CU-ECU-SPVI_Foxb1_Glut
+247,247 MV-SPIV Phox2b Ebf3 Lbx1 Glut,MV-SPIV Phox2b Ebf3 Lbx1 Glut,MV-SPIV_Phox2b_Ebf3_Lbx1_Glut,MV-SPIV_Phox2b_Ebf3_Lbx1_Glut,247_MV-SPIV_Phox2b_Ebf3_Lbx1_Glut,MV-SPIV_Phox2b_Ebf3_Lbx1_Glut
+248,248 MV-SPIV Zic4 Neurod2 Glut,MV-SPIV Zic4 Neurod2 Glut,MV-SPIV_Zic4_Neurod2_Glut,MV-SPIV_Zic4_Neurod2_Glut,248_MV-SPIV_Zic4_Neurod2_Glut,MV-SPIV_Zic4_Neurod2_Glut
+249,249 NTS Aldh1a2 Glut,NTS Aldh1a2 Glut,NTS_Aldh1a2_Glut,NTS_Aldh1a2_Glut,249_NTS_Aldh1a2_Glut,NTS_Aldh1a2_Glut
+250,250 CBN Neurod2 Pvalb Glut,CBN Neurod2 Pvalb Glut,CBN_Neurod2_Pvalb_Glut,CBN_Neurod2_Pvalb_Glut,250_CBN_Neurod2_Pvalb_Glut,CBN_Neurod2_Pvalb_Glut
+251,251 NTS Dbh Glut,NTS Dbh Glut,NTS_Dbh_Glut,NTS_Dbh_Glut,251_NTS_Dbh_Glut,NTS_Dbh_Glut
+252,252 DMX VII Tbx20 Chol,DMX VII Tbx20 Chol,DMX_VII_Tbx20_Chol,DMX_VII_Tbx20_Chol,252_DMX_VII_Tbx20_Chol,DMX_VII_Tbx20_Chol
+253,253 IO Fgl2 Glut,IO Fgl2 Glut,IO_Fgl2_Glut,IO_Fgl2_Glut,253_IO_Fgl2_Glut,IO_Fgl2_Glut
+254,254 VCO Mafa Meis2 Glut,VCO Mafa Meis2 Glut,VCO_Mafa_Meis2_Glut,VCO_Mafa_Meis2_Glut,254_VCO_Mafa_Meis2_Glut,VCO_Mafa_Meis2_Glut
+255,255 SPVO Mafa Meis2 Glut,SPVO Mafa Meis2 Glut,SPVO_Mafa_Meis2_Glut,SPVO_Mafa_Meis2_Glut,255_SPVO_Mafa_Meis2_Glut,SPVO_Mafa_Meis2_Glut
+256,256 SPVC Mafa Glut,SPVC Mafa Glut,SPVC_Mafa_Glut,SPVC_Mafa_Glut,256_SPVC_Mafa_Glut,SPVC_Mafa_Glut
+257,257 SPVC Ccdc172 Glut,SPVC Ccdc172 Glut,SPVC_Ccdc172_Glut,SPVC_Ccdc172_Glut,257_SPVC_Ccdc172_Glut,SPVC_Ccdc172_Glut
+258,258 SPVC Nmu Glut,SPVC Nmu Glut,SPVC_Nmu_Glut,SPVC_Nmu_Glut,258_SPVC_Nmu_Glut,SPVC_Nmu_Glut
+259,259 MDRNd Bves Glut,MDRNd Bves Glut,MDRNd_Bves_Glut,MDRNd_Bves_Glut,259_MDRNd_Bves_Glut,MDRNd_Bves_Glut
+260,260 MDRNv Crp Glut,MDRNv Crp Glut,MDRNv_Crp_Glut,MDRNv_Crp_Glut,260_MDRNv_Crp_Glut,MDRNv_Crp_Glut
+261,261 HB Calcb Chol,HB Calcb Chol,HB_Calcb_Chol,HB_Calcb_Chol,261_HB_Calcb_Chol,HB_Calcb_Chol
+262,262 Pineal Crx Glut,Pineal Crx Glut,Pineal_Crx_Glut,Pineal_Crx_Glut,262_Pineal_Crx_Glut,Pineal_Crx_Glut
+263,263 CS-RPO Meis2 Gaba,CS-RPO Meis2 Gaba,CS-RPO_Meis2_Gaba,CS-RPO_Meis2_Gaba,263_CS-RPO_Meis2_Gaba,CS-RPO_Meis2_Gaba
+264,264 PRNc Otp Gly-Gaba,PRNc Otp Gly-Gaba,PRNc_Otp_Gly-Gaba,PRNc_Otp_Gly-Gaba,264_PRNc_Otp_Gly-Gaba,PRNc_Otp_Gly-Gaba
+265,265 PB Sst Gly-Gaba,PB Sst Gly-Gaba,PB_Sst_Gly-Gaba,PB_Sst_Gly-Gaba,265_PB_Sst_Gly-Gaba,PB_Sst_Gly-Gaba
+266,266 PRNc Prox1 Brs3 Gly-Gaba,PRNc Prox1 Brs3 Gly-Gaba,PRNc_Prox1_Brs3_Gly-Gaba,PRNc_Prox1_Brs3_Gly-Gaba,266_PRNc_Prox1_Brs3_Gly-Gaba,PRNc_Prox1_Brs3_Gly-Gaba
+267,267 CS-PRNr-PCG Tmem163 Otp Gaba,CS-PRNr-PCG Tmem163 Otp Gaba,CS-PRNr-PCG_Tmem163_Otp_Gaba,CS-PRNr-PCG_Tmem163_Otp_Gaba,267_CS-PRNr-PCG_Tmem163_Otp_Gaba,CS-PRNr-PCG_Tmem163_Otp_Gaba
+268,268 CS-PRNr-DR En1 Sox2 Gaba,CS-PRNr-DR En1 Sox2 Gaba,CS-PRNr-DR_En1_Sox2_Gaba,CS-PRNr-DR_En1_Sox2_Gaba,268_CS-PRNr-DR_En1_Sox2_Gaba,CS-PRNr-DR_En1_Sox2_Gaba
+269,269 LDT Fgf7 Gaba,LDT Fgf7 Gaba,LDT_Fgf7_Gaba,LDT_Fgf7_Gaba,269_LDT_Fgf7_Gaba,LDT_Fgf7_Gaba
+270,270 LDT-DTN Gata3 Nfix Gaba,LDT-DTN Gata3 Nfix Gaba,LDT-DTN_Gata3_Nfix_Gaba,LDT-DTN_Gata3_Nfix_Gaba,270_LDT-DTN_Gata3_Nfix_Gaba,LDT-DTN_Gata3_Nfix_Gaba
+271,271 NI-RPO Gata3 Nr4a2 Gaba,NI-RPO Gata3 Nr4a2 Gaba,NI-RPO_Gata3_Nr4a2_Gaba,NI-RPO_Gata3_Nr4a2_Gaba,271_NI-RPO_Gata3_Nr4a2_Gaba,NI-RPO_Gata3_Nr4a2_Gaba
+272,272 LDT-PCG-CS Gata3 Lhx1 Gaba,LDT-PCG-CS Gata3 Lhx1 Gaba,LDT-PCG-CS_Gata3_Lhx1_Gaba,LDT-PCG-CS_Gata3_Lhx1_Gaba,272_LDT-PCG-CS_Gata3_Lhx1_Gaba,LDT-PCG-CS_Gata3_Lhx1_Gaba
+273,273 PDTg-PCG Pax6 Gaba,PDTg-PCG Pax6 Gaba,PDTg-PCG_Pax6_Gaba,PDTg-PCG_Pax6_Gaba,273_PDTg-PCG_Pax6_Gaba,PDTg-PCG_Pax6_Gaba
+274,274 PDTg Otp Shroom3 Gaba,PDTg Otp Shroom3 Gaba,PDTg_Otp_Shroom3_Gaba,PDTg_Otp_Shroom3_Gaba,274_PDTg_Otp_Shroom3_Gaba,PDTg_Otp_Shroom3_Gaba
+275,275 PDTg Otp Olig3 Gaba,PDTg Otp Olig3 Gaba,PDTg_Otp_Olig3_Gaba,PDTg_Otp_Olig3_Gaba,275_PDTg_Otp_Olig3_Gaba,PDTg_Otp_Olig3_Gaba
+276,276 LDT-PCG St18 Gaba,LDT-PCG St18 Gaba,LDT-PCG_St18_Gaba,LDT-PCG_St18_Gaba,276_LDT-PCG_St18_Gaba,LDT-PCG_St18_Gaba
+277,277 DTN-LDT-IPN Otp Pax3 Gaba,DTN-LDT-IPN Otp Pax3 Gaba,DTN-LDT-IPN_Otp_Pax3_Gaba,DTN-LDT-IPN_Otp_Pax3_Gaba,277_DTN-LDT-IPN_Otp_Pax3_Gaba,DTN-LDT-IPN_Otp_Pax3_Gaba
+278,278 NLL Gata3 Gly-Gaba,NLL Gata3 Gly-Gaba,NLL_Gata3_Gly-Gaba,NLL_Gata3_Gly-Gaba,278_NLL_Gata3_Gly-Gaba,NLL_Gata3_Gly-Gaba
+279,279 PSV Pax2 Gly-Gaba,PSV Pax2 Gly-Gaba,PSV_Pax2_Gly-Gaba,PSV_Pax2_Gly-Gaba,279_PSV_Pax2_Gly-Gaba,PSV_Pax2_Gly-Gaba
+280,280 NLL-po Pax7 Gaba,NLL-po Pax7 Gaba,NLL-po_Pax7_Gaba,NLL-po_Pax7_Gaba,280_NLL-po_Pax7_Gaba,NLL-po_Pax7_Gaba
+281,281 POR Gata3 Gly-Gaba,POR Gata3 Gly-Gaba,POR_Gata3_Gly-Gaba,POR_Gata3_Gly-Gaba,281_POR_Gata3_Gly-Gaba,POR_Gata3_Gly-Gaba
+282,282 POR Spp1 Gly-Gaba,POR Spp1 Gly-Gaba,POR_Spp1_Gly-Gaba,POR_Spp1_Gly-Gaba,282_POR_Spp1_Gly-Gaba,POR_Spp1_Gly-Gaba
+283,283 PRP Otp Gly-Gaba,PRP Otp Gly-Gaba,PRP_Otp_Gly-Gaba,PRP_Otp_Gly-Gaba,283_PRP_Otp_Gly-Gaba,PRP_Otp_Gly-Gaba
+284,284 GRN-IRN-MDRNd Ikzf1 Gly-Gaba,GRN-IRN-MDRNd Ikzf1 Gly-Gaba,GRN-IRN-MDRNd_Ikzf1_Gly-Gaba,GRN-IRN-MDRNd_Ikzf1_Gly-Gaba,284_GRN-IRN-MDRNd_Ikzf1_Gly-Gaba,GRN-IRN-MDRNd_Ikzf1_Gly-Gaba
+285,285 MY Lhx1 Gly-Gaba,MY Lhx1 Gly-Gaba,MY_Lhx1_Gly-Gaba,MY_Lhx1_Gly-Gaba,285_MY_Lhx1_Gly-Gaba,MY_Lhx1_Gly-Gaba
+286,286 PPY-PGRNl Vip Glyc-Gaba,PPY-PGRNl Vip Glyc-Gaba,PPY-PGRNl_Vip_Glyc-Gaba,PPY-PGRNl_Vip_Glyc-Gaba,286_PPY-PGRNl_Vip_Glyc-Gaba,PPY-PGRNl_Vip_Glyc-Gaba
+287,287 MV-SPIV-PRP Dmbx1 Gly-Gaba,MV-SPIV-PRP Dmbx1 Gly-Gaba,MV-SPIV-PRP_Dmbx1_Gly-Gaba,MV-SPIV-PRP_Dmbx1_Gly-Gaba,287_MV-SPIV-PRP_Dmbx1_Gly-Gaba,MV-SPIV-PRP_Dmbx1_Gly-Gaba
+288,288 MDRN Hoxb5 Ebf2 Gly-Gaba,MDRN Hoxb5 Ebf2 Gly-Gaba,MDRN_Hoxb5_Ebf2_Gly-Gaba,MDRN_Hoxb5_Ebf2_Gly-Gaba,288_MDRN_Hoxb5_Ebf2_Gly-Gaba,MDRN_Hoxb5_Ebf2_Gly-Gaba
+289,289 MDRNd Prox1 Pax6 Gly-Gaba,MDRNd Prox1 Pax6 Gly-Gaba,MDRNd_Prox1_Pax6_Gly-Gaba,MDRNd_Prox1_Pax6_Gly-Gaba,289_MDRNd_Prox1_Pax6_Gly-Gaba,MDRNd_Prox1_Pax6_Gly-Gaba
+290,290 MY Prox1 Lmo7 Gly-Gaba,MY Prox1 Lmo7 Gly-Gaba,MY_Prox1_Lmo7_Gly-Gaba,MY_Prox1_Lmo7_Gly-Gaba,290_MY_Prox1_Lmo7_Gly-Gaba,MY_Prox1_Lmo7_Gly-Gaba
+291,291 NTS-MDRNd Prox1 Zic1 Gly-Gaba,NTS-MDRNd Prox1 Zic1 Gly-Gaba,NTS-MDRNd_Prox1_Zic1_Gly-Gaba,NTS-MDRNd_Prox1_Zic1_Gly-Gaba,291_NTS-MDRNd_Prox1_Zic1_Gly-Gaba,NTS-MDRNd_Prox1_Zic1_Gly-Gaba
+292,292 MV Nkx6-1 Gly-Gaba,MV Nkx6-1 Gly-Gaba,MV_Nkx6-1_Gly-Gaba,MV_Nkx6-1_Gly-Gaba,292_MV_Nkx6-1_Gly-Gaba,MV_Nkx6-1_Gly-Gaba
+293,293 PAS-MV Ebf2 Gly-Gaba,PAS-MV Ebf2 Gly-Gaba,PAS-MV_Ebf2_Gly-Gaba,PAS-MV_Ebf2_Gly-Gaba,293_PAS-MV_Ebf2_Gly-Gaba,PAS-MV_Ebf2_Gly-Gaba
+294,294 MV Pax6 Gly-Gaba,MV Pax6 Gly-Gaba,MV_Pax6_Gly-Gaba,MV_Pax6_Gly-Gaba,294_MV_Pax6_Gly-Gaba,MV_Pax6_Gly-Gaba
+295,295 CBN Dmbx1 Gaba,CBN Dmbx1 Gaba,CBN_Dmbx1_Gaba,CBN_Dmbx1_Gaba,295_CBN_Dmbx1_Gaba,CBN_Dmbx1_Gaba
+296,296 RPA Pax6 Hoxb5 Gly-Gaba,RPA Pax6 Hoxb5 Gly-Gaba,RPA_Pax6_Hoxb5_Gly-Gaba,RPA_Pax6_Hoxb5_Gly-Gaba,296_RPA_Pax6_Hoxb5_Gly-Gaba,RPA_Pax6_Hoxb5_Gly-Gaba
+297,297 CU-ECU Pax2 Gly-Gaba,CU-ECU Pax2 Gly-Gaba,CU-ECU_Pax2_Gly-Gaba,CU-ECU_Pax2_Gly-Gaba,297_CU-ECU_Pax2_Gly-Gaba,CU-ECU_Pax2_Gly-Gaba
+298,298 PRP Gata3 Slc6a5 Gly-Gaba,PRP Gata3 Slc6a5 Gly-Gaba,PRP_Gata3_Slc6a5_Gly-Gaba,PRP_Gata3_Slc6a5_Gly-Gaba,298_PRP_Gata3_Slc6a5_Gly-Gaba,PRP_Gata3_Slc6a5_Gly-Gaba
+299,299 MARN-PPY Ngfr Gly-Gaba,MARN-PPY Ngfr Gly-Gaba,MARN-PPY_Ngfr_Gly-Gaba,MARN-PPY_Ngfr_Gly-Gaba,299_MARN-PPY_Ngfr_Gly-Gaba,MARN-PPY_Ngfr_Gly-Gaba
+300,300 PARN-MDRNd-NTS Gbx2 Gly-Gaba,PARN-MDRNd-NTS Gbx2 Gly-Gaba,PARN-MDRNd-NTS_Gbx2_Gly-Gaba,PARN-MDRNd-NTS_Gbx2_Gly-Gaba,300_PARN-MDRNd-NTS_Gbx2_Gly-Gaba,PARN-MDRNd-NTS_Gbx2_Gly-Gaba
+301,301 MV Nr4a2 Gly-Gaba,MV Nr4a2 Gly-Gaba,MV_Nr4a2_Gly-Gaba,MV_Nr4a2_Gly-Gaba,301_MV_Nr4a2_Gly-Gaba,MV_Nr4a2_Gly-Gaba
+302,302 MV Xdh Gly-Gaba,MV Xdh Gly-Gaba,MV_Xdh_Gly-Gaba,MV_Xdh_Gly-Gaba,302_MV_Xdh_Gly-Gaba,MV_Xdh_Gly-Gaba
+303,303 IRN Dmbx1 Pax2 Gly-Gaba,IRN Dmbx1 Pax2 Gly-Gaba,IRN_Dmbx1_Pax2_Gly-Gaba,IRN_Dmbx1_Pax2_Gly-Gaba,303_IRN_Dmbx1_Pax2_Gly-Gaba,IRN_Dmbx1_Pax2_Gly-Gaba
+304,304 NTS-PARN Neurod2 Gly-Gaba,NTS-PARN Neurod2 Gly-Gaba,NTS-PARN_Neurod2_Gly-Gaba,NTS-PARN_Neurod2_Gly-Gaba,304_NTS-PARN_Neurod2_Gly-Gaba,NTS-PARN_Neurod2_Gly-Gaba
+305,305 SPVI-SPVC Sall3 Nfib Gly-Gaba,SPVI-SPVC Sall3 Nfib Gly-Gaba,SPVI-SPVC_Sall3_Nfib_Gly-Gaba,SPVI-SPVC_Sall3_Nfib_Gly-Gaba,305_SPVI-SPVC_Sall3_Nfib_Gly-Gaba,SPVI-SPVC_Sall3_Nfib_Gly-Gaba
+306,306 SPVI-SPVC Sall3 Lhx1 Gly-Gaba,SPVI-SPVC Sall3 Lhx1 Gly-Gaba,SPVI-SPVC_Sall3_Lhx1_Gly-Gaba,SPVI-SPVC_Sall3_Lhx1_Gly-Gaba,306_SPVI-SPVC_Sall3_Lhx1_Gly-Gaba,SPVI-SPVC_Sall3_Lhx1_Gly-Gaba
+307,307 RO-RPA Pkd2l1 Gaba,RO-RPA Pkd2l1 Gaba,RO-RPA_Pkd2l1_Gaba,RO-RPA_Pkd2l1_Gaba,307_RO-RPA_Pkd2l1_Gaba,RO-RPA_Pkd2l1_Gaba
+308,308 DCO Il22 Gly-Gaba,DCO Il22 Gly-Gaba,DCO_Il22_Gly-Gaba,DCO_Il22_Gly-Gaba,308_DCO_Il22_Gly-Gaba,DCO_Il22_Gly-Gaba
+309,309 CB PLI Gly-Gaba,CB PLI Gly-Gaba,CB_PLI_Gly-Gaba,CB_PLI_Gly-Gaba,309_CB_PLI_Gly-Gaba,CB_PLI_Gly-Gaba
+310,310 CBX Golgi Gly-Gaba,CBX Golgi Gly-Gaba,CBX_Golgi_Gly-Gaba,CBX_Golgi_Gly-Gaba,310_CBX_Golgi_Gly-Gaba,CBX_Golgi_Gly-Gaba
+311,311 CBX MLI Megf11 Gaba,CBX MLI Megf11 Gaba,CBX_MLI_Megf11_Gaba,CBX_MLI_Megf11_Gaba,311_CBX_MLI_Megf11_Gaba,CBX_MLI_Megf11_Gaba
+312,312 CBX MLI Cdh22 Gaba,CBX MLI Cdh22 Gaba,CBX_MLI_Cdh22_Gaba,CBX_MLI_Cdh22_Gaba,312_CBX_MLI_Cdh22_Gaba,CBX_MLI_Cdh22_Gaba
+313,313 CBX Purkinje Gaba,CBX Purkinje Gaba,CBX_Purkinje_Gaba,CBX_Purkinje_Gaba,313_CBX_Purkinje_Gaba,CBX_Purkinje_Gaba
+314,314 CB Granule Glut,CB Granule Glut,CB_Granule_Glut,CB_Granule_Glut,314_CB_Granule_Glut,CB_Granule_Glut
+315,315 DCO UBC Glut,DCO UBC Glut,DCO_UBC_Glut,DCO_UBC_Glut,315_DCO_UBC_Glut,DCO_UBC_Glut
+316,316 Bergmann NN,Bergmann NN,Bergmann_NN,Bergmann_NN,316_Bergmann_NN,Bergmann_NN
+317,317 Astro-CB NN,Astro-CB NN,Astro-CB_NN,Astro-CB_NN,317_Astro-CB_NN,Astro-CB_NN
+318,318 Astro-NT NN,Astro-NT NN,Astro-NT_NN,Astro-NT_NN,318_Astro-NT_NN,Astro-NT_NN
+319,319 Astro-TE NN,Astro-TE NN,Astro-TE_NN,Astro-TE_NN,319_Astro-TE_NN,Astro-TE_NN
+320,320 Astro-OLF NN,Astro-OLF NN,Astro-OLF_NN,Astro-OLF_NN,320_Astro-OLF_NN,Astro-OLF_NN
+321,321 Astroependymal NN,Astroependymal NN,Astroependymal_NN,Astroependymal_NN,321_Astroependymal_NN,Astroependymal_NN
+322,322 Tanycyte NN,Tanycyte NN,Tanycyte_NN,Tanycyte_NN,322_Tanycyte_NN,Tanycyte_NN
+323,323 Ependymal NN,Ependymal NN,Ependymal_NN,Ependymal_NN,323_Ependymal_NN,Ependymal_NN
+324,324 Hypendymal NN,Hypendymal NN,Hypendymal_NN,Hypendymal_NN,324_Hypendymal_NN,Hypendymal_NN
+325,325 CHOR NN,CHOR NN,CHOR_NN,CHOR_NN,325_CHOR_NN,CHOR_NN
+326,326 OPC NN,OPC NN,OPC_NN,OPC_NN,326_OPC_NN,OPC_NN
+327,327 Oligo NN,Oligo NN,Oligo_NN,Oligo_NN,327_Oligo_NN,Oligo_NN
+328,328 OEC NN,OEC NN,OEC_NN,OEC_NN,328_OEC_NN,OEC_NN
+329,329 ABC NN,ABC NN,ABC_NN,ABC_NN,329_ABC_NN,ABC_NN
+330,330 VLMC NN,VLMC NN,VLMC_NN,VLMC_NN,330_VLMC_NN,VLMC_NN
+331,331 Peri NN,Peri NN,Peri_NN,Peri_NN,331_Peri_NN,Peri_NN
+332,332 SMC NN,SMC NN,SMC_NN,SMC_NN,332_SMC_NN,SMC_NN
+333,333 Endo NN,Endo NN,Endo_NN,Endo_NN,333_Endo_NN,Endo_NN
+334,334 Microglia NN,Microglia NN,Microglia_NN,Microglia_NN,334_Microglia_NN,Microglia_NN
+335,335 BAM NN,BAM NN,BAM_NN,BAM_NN,335_BAM_NN,BAM_NN
+336,336 Monocytes NN,Monocytes NN,Monocytes_NN,Monocytes_NN,336_Monocytes_NN,Monocytes_NN
+337,337 DC NN,DC NN,DC_NN,DC_NN,337_DC_NN,DC_NN
+338,338 Lymphoid NN,Lymphoid NN,Lymphoid_NN,Lymphoid_NN,338_Lymphoid_NN,Lymphoid_NN
+339,339 LQ,LQ,LQ,LQ,339_LQ,LQ

@@ -1,0 +1,115 @@
+* CEMBA cell subclass level names
+ | ShortName | FullName                                                                                             |                         |
+ |-----------+------------------------------------------------------------------------------------------------------+-------------------------|
+ | NonN      |                                                                                                      |                         |
+ |-----------+------------------------------------------------------------------------------------------------------+-------------------------|
+ | OGC       | Oligodendrocytes                                                                                     |                         |
+ | ASC       | Asctrocytes                                                                                          |                         |
+ | PVM       | Perivascular macrophages                                                                             |                         |
+ | RGL       | Radial glia-like cells                                                                               |                         |
+ | PER       | Pericytes                                                                                            |                         |
+ | VEC       | Vascular endothelial cells                                                                           |                         |
+ | VLMC      | Vascular and leptomeningeal cells                                                                    |                         |
+ | VPIA      | Vascular and leptomeningeal cells, Pia                                                               |                         |
+ | BERG      | Bergmann glia, cerebellum,  also as radial epithelial cells/Golgi epithelial cells/radial astrocytes | Specialized astroctytes |
+ | MGL       | Microglia                                                                                            |                         |
+ | EPEN      | Ependymal cells                                                                                      |                         |
+ |-----------+------------------------------------------------------------------------------------------------------+-------------------------|
+ | GLUT      |                                                                                                      |                         |
+ |-----------+------------------------------------------------------------------------------------------------------+-------------------------|
+ | ITL23GL   | Excitatory neurons, Cortex L2/3                                                                      |                         |
+ | ITL4GL    | Excitatory neurons, Cortex L4                                                                        |                         |
+ | ITL5GL    | Excitatory neurons, Cortex L5                                                                        |                         |
+ | L6bGL     | Excitatory neurons, Cortex L6b                                                                       |                         |
+ | CLAGL     | Excitatory neurons, Claustrum                                                                        |                         |
+ | ITHGL     | Excitatory neurons, Retrosplenial area                                                               |                         |
+ | CTGL      | Excitatory neurons, Cortex CT                                                                        |                         |
+ | PTGL      | Excitatory neurons, Cortex PT                                                                        |                         |
+ | NPGL      | Excitatory neurons, Cortex NP                                                                        |                         |
+ | OLFGL     | Excitatory neurons, Olfactory                                                                        |                         |
+ | PIRGL     | Excitatory neurons, Priform cortex                                                                   |                         |
+ | OBGL      | Excitatory neurons, AON (Anterior Olfactory Nucleus)                                                 |                         |
+ | CA3GL     | Excitatory neurons, hippocampus CA3                                                                  |                         |
+ | CA1GL     | Excitatory neurons, hippocampus CA1                                                                  |                         |
+ | GRC       | Granule neurons, Dentate gyrus                                                                       |                         |
+ | DGNBL     | Granule neuroblasts, dentate gyrus                                                                   |                         |
+ | GRANGL    | Excitatory neurons, grandule neurons, cerebellum region                                              |                         |
+ | PAGGL     | Excitatory neurons, Periaqueductal gray, midbrain region                                             |                         |
+ | RHPGL     | Excitatory neurons, RHP region major                                                                 |                         |
+ | RSPGL     | Excitatory neurons, RSP region major                                                                 |                         |
+ | AMYGL     | Excitatory neurons, AMY region major                                                                 |                         |
+ | BASOAMYGL | Excitatory neurons, Basolateral amygdala                                                             |                         |
+ | AMY1GL    | Excitatory neurons, AMY region major (namely AMYGL)                                                  |                         |
+ | AMY2GL    | Excitatory neurons, AMY region major (namely AMYGL)                                                  |                         |
+ | SERGL     | Excitatory neurons, Serotonergic neurons                                                             |                         |
+ | PMCH      | Excitatory neurons, PMCH-positive, hypothylamus                                                      |                         |
+ | VASO      | Excitatory neurons, vasopressin-producing cells, hypothylamus                                        |                         |
+ | OREX      | Excitatory neurons, orexin-producing cells, hypothylamus                                             |                         |
+ | OXYT      | Excitatory neurons, oxytocin-producing cells, hypothylamus                                           |                         |
+ | HBGL      | Excitatory neurons, hindbrain region                                                                 |                         |
+ | MBGL      | Excitatory neurons, Mid-brain region                                                                 |                         |
+ | PMOTGL    | Excitatory neurons, hindbrain Pons-Pmot region major                                                 |                         |
+ | STRGL     | Excitatory neurons, STR-LSX region                                                                   |                         |
+ | CHOGL     | Excitatory neurons, cholinergic neurons, habenula                                                    |                         |
+ | DOPMB     | Excitatory neurons, Dopaminergic neuros, ventral midbrain                                            |                         |
+ | MYGL      | Excitatory neurons, Mydulla major                                                                    |                         |
+ | CRC       | Cajal-Retzius cells, Hippocampus                                                                     |                         |
+ | ICGL      | Excitatory neurons, Inferior colliculus, midbrain                                                    |                         |
+ |-----------+------------------------------------------------------------------------------------------------------+-------------------------|
+ | GABA      |                                                                                                      |                         |
+ |-----------+------------------------------------------------------------------------------------------------------+-------------------------|
+ | LAMGA     | CGE-derived neurogliaform cells, Lamp5 positive                                                      |                         |
+ | VIPGA     | CGE-derived neurogliaform cells, Vip positive                                                        |                         |
+ | PVGA      | MGE-derived neurogliaform cells, Pvalb                                                               |                         |
+ | SSTGA     | MGE-derived neurogliaform cells, Sst positive                                                        |                         |
+ | LSXGA     | Inhibitory neurons, septal nucleus                                                                   |                         |
+ | MSGA      | Inhibitory neurons, Medial septal                                                                    |                         |
+ | CNUGA     | Inhibitory neurons, striatum, cerebral nuclei                                                        |                         |
+ | STRGA     | Inhibitory neurons, striatum, Foxp2 positive                                                         |                         |
+ | D1MSN     | D1 medium spiny neurons, striatum                                                                    |                         |
+ | D2MSN     | D2 medium spiny neurons, striatum                                                                    |                         |
+ | MXD       | Matrix D1 neurons, striatum                                                                          |                         |
+ | OBGA1     | Inhibitory neurons, olfactory bulb, main and accessory olfactory bulb granular layer                 |                         |
+ | OBGA2     | Inhibitory neurons, olfactory bulb, olfactory bulb, inner granular layer                             |                         |
+ | OBDOP     | Dopaminergic periglomerular interneuron, olfactory bulb                                              |                         |
+ | OBNBL     | Neuroblasts, Olfactory                                                                               |                         |
+ | DGNBL     | Granule neuroblasts, dentate gyrus                                                                   |                         |
+ | SEROPAG   | Inhibitory neurons, serotonergic neurons, hindbrain PAG                                              |                         |
+ | SEROPM    | Inhibitory neurons, serotonergic neurons, pons and medulla                                           |                         |
+ | MBGA      | Inhibitory neurons, midbrain                                                                         |                         |
+ | DEGA      | NA                                                                                                   |                         |
+ | HBGA      | Inhibitory neurons, hindbrain region                                                                 |                         |
+ | LSXGA     | Inhibitory neurons, LSX region major                                                                 |                         |
+ | PYRGA     | Inhibitory neurons, pyramidal neurons, Amygdala                                                      |                         |
+ | STRGA     | Inhibitory neurons, STR region                                                                       |                         |
+ | THGA      | Inhibitory neurons, thylamus region                                                                  |                         |
+ | PURGA     | Inhibitory neurons, Purkinje cells                                                                   |                         |
+ | HYGA      | Inhibitory neurons, hypothalamus region                                                              |                         |
+ | KF        | Inhibitory neurons, Keolliker-Fuse subneucleus                                                       |                         |
+ | RMSTTH    | Inhibitory neurons, rmst+, thylamus                                                                      |                         |
+ |-----------+------------------------------------------------------------------------------------------------------+-------------------------|
+ | Others    |                                                                                                      |                         |
+ |-----------+------------------------------------------------------------------------------------------------------+-------------------------|
+ | GRANLI    | Grannular layer interneurons, cerebellum                                                             |                         |
+ | CHOLIAMY  | Cholinergic interneurons, Amygdala                                                                   |                         |
+ | MBRN      | Cholinergic neurons, midbrain red nucleus, excitatory neruons                                        |                         |
+ | PEPT      | Peptidergic neurons, hypothalamus                                                                    |                         |
+
+
+* CEMBA cell subtype level names
+  | ShortName | FullName                                   |
+  |-----------+--------------------------------------------|
+  | ASCG      | Astroctypes, grey matter                   |
+  | ASCW      | Astroctypes, white matter                  |
+  | ASCNT     | Astroctypes, non-telencephalon region      |
+  | IOL       | Immature oligodendrocytes                  |
+  | OPC       | Oligodendrocytes precursor cells           |
+  | COP       | committed oligodendrocytes cells           |
+  | NFOL      | Newly formed oligodendrocytes              |
+  | MFOL      | Myelin forming oligodendrocytes            |
+  | MOL       | Mature Oligodendrocytes                    |
+  | NIPC      | Neuronal intermediate progenitor cells     |
+  | RGDG      | Dentate gyrus radial glia-like cells       |
+  | RGSZ      | Subventricular zone radial glia-like cells |
+  | TANY      | Tanycytes, glia-like cells                 |
+  | CHOR      | Chorid plexus epithelial cells             |

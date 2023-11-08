@@ -11,21 +11,44 @@ of Center for Epigenomics of the Mouse Brain Atlas (CEMBA).
     - Under the directory [[./package][package]], we put lots of common functions there.
 
 ** Resources
-    - We mainly use SnapATAC to analyze the single-nucleus ATAC-seq data
-      - We maintain a bug-fix version of SnapATAC: https://github.com/beyondpie/SnapATAC
-        - The original SnapATAC: https://github.com/r3fang/SnapATAC
-      - There is an updated SnapATAC2: https://github.com/kaizhang/SnapATAC2
-        - This is much powerful version, and we are working on using
-          SnapATAC2 to re-analyze the data, and once we've done that,
-          we will push our scripts to the current repo, too.
+   We mainly use [[https://github.com/kaizhang/SnapATAC2][SnapATAC2]] to analyze the single-nucleus ATAC-seq data
     - Comparation between Scrublet and AMULET: https://github.com/yuelaiwang/CEMBA_AMULET_Scrublet 
-    - The peak calling pipeline and NMF analysis are mainly from: https://github.com/yal054/snATACutils
-    - The deep learning related codes now in the repo:  https://github.com/yal054/mba_dl_model
-      - We plan to merge those codes to this repo soon.
+    - The deep learning related codes now in the repo: https://github.com/yal054/mba_dl_model
     
-** NOTE
-   - We here put majority analysis of CEMBA whole mouse brain (wmb) by SnapATAC2
-   
+** Codes
+*** [[file:package/R/cembav2env.R][cembav2env.R]]: R env to store the metadata during analysis.
+ |----------------+-------------------------------------------------------|
+ | Enviorment     | Description                                           |
+ |----------------+-------------------------------------------------------|
+ | cembav2env     | meta data of SnapATAC and SnapATAC2                   |
+ |----------------+-------------------------------------------------------|
+ | cluSumBySa2    | clustering meta data, such as resolution,             |
+ |                | barcode to L4 Ids, L4 major regions and so on         |
+ |----------------+-------------------------------------------------------|
+ | Sa2Integration | Integration meta data, like Allen's data descriptions |
+ |----------------+-------------------------------------------------------|
+ | Sa2PeakCalling | Peak calling meta data                                |
+ |----------------+-------------------------------------------------------|
+*** Clustering
+    In total, we have implemented four-round iterative clustering.
+    See details in [[file:17.snapatac2][17.snapatac2]]
+*** Integration and annotation
+    We use Allen's scRNAseq data and their annotations for our data annotation.
+    See details in [[file:19.snap2_integration][19.snap2_integratio]]
+    - Manual check: [[https://docs.google.com/spreadsheets/d/1PRaBDlMuFdMAUrcahdyVrIuk0Pwj3Yx2_1DG3NHFMOg/edit#gid=1426252395][L4-subclass annotation check]]
+*** Peak calling
+   We use macs2 with multiple stage filtering, especially use SPM >= 5
+   for filtering peaks.
+   See details in [[file:18.snap2_peakcalling][18.snap2_peakcalling]]
+*** PBS TORQUE
+    In order to better support pbs torque in tscc, please
+    - =mkdir -p ~/.config/snakemake=
+    - then =cp -r /projects/ps-renlab2/szu/projects/CEMBA2/package/pbs-torque-conda ~/.config/snakemake/=
+    - then go to the pbs-torque-conda directory you copy,
+      1. modify config.yaml: replace szu to your name and corresponding conda path
+      2. modify submit.yaml: replace szu to your name
+      3. modify pbs-submit.py: replace szu to your name
+
 
 
 
