@@ -1,5 +1,5 @@
 ** CEMBA_wmb_snATAC
-This repository is used for the whole mouse brain snATAC seq analysis
+This repository is used for the whole mouse brain snATAC-seq data analysis
 of Center for Epigenomics of the Mouse Brain Atlas (CEMBA). 
 
 ** Pipeline
@@ -9,9 +9,7 @@ of Center for Epigenomics of the Mouse Brain Atlas (CEMBA).
       use hundreds of CPUs at the same time.
     - R, Shell and Python are mainly used, especially R (version 4.2).
     - Under the directory [[./package][package]], we put lots of common functions there.
-
-** Resources
-   We mainly use [[https://github.com/kaizhang/SnapATAC2][SnapATAC2]] to analyze the single-nucleus ATAC-seq data
+    - We mainly use [[https://github.com/kaizhang/SnapATAC2][SnapATAC2]] to analyze the single-nucleus ATAC-seq data
     - Comparation between Scrublet and AMULET: https://github.com/yuelaiwang/CEMBA_AMULET_Scrublet 
     - The deep learning related codes now in the repo: https://github.com/yal054/mba_dl_model
     
