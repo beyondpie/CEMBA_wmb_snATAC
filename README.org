@@ -10,7 +10,8 @@ of Center for Epigenomics of the Mouse Brain Atlas (CEMBA), which is now accepte
   RRID:SCR_016152) at https://assets.nemoarchive.org/dat-bej4ymm (the
   raw directory under Source Data URL in this archive).
 - We also uploaded our demultiplexed fastq files and processed files
-  under the GEO accession number GSE246791.
+  under the GEO accession number GSE246791:
+  - https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE246791
 - Processed data is also available on our web portal and can be explored here: http://www.catlas.org.
   - A Google drive link for bigwig files and SnapATAC2 files just for backup:
     - https://drive.google.com/drive/folders/1mule-CkxN939mxhYAqpOIxjPpq0j8qVP?usp=sharing
@@ -44,14 +45,14 @@ of Center for Epigenomics of the Mouse Brain Atlas (CEMBA), which is now accepte
  |----------------+-------------------------------------------------------|
 *** Clustering
     In total, we have implemented four-round iterative clustering.
-    See details in [[file:17.snapatac2][17.snapatac2]]
+    See details in [[file:01.clustering][01.clustering]]
 *** Integration and annotation
     We use Allen's scRNAseq data and their annotations for our data annotation.
-    See details in [[file:19.snap2_integration][19.snap2_integratio]]
+    See details in [[file:02.integration][02.integration]]
 *** Peak calling
    We use macs2 with multiple stage filtering, especially use SPM >= 5
    for filtering peaks.
-   See details in [[file:18.snap2_peakcalling][18.snap2_peakcalling]]
+   See details in [[file:03.peakcalling][03.peakcalling]]
 *** PBS TORQUE
     In order to better support pbs torque in tscc, please
     - =mkdir -p ~/.config/snakemake=
