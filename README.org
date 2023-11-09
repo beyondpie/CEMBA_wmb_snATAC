@@ -1,6 +1,12 @@
-** CEMBA_wmb_snATAC
-This repository is used for the whole mouse brain snATAC-seq data analysis
-of Center for Epigenomics of the Mouse Brain Atlas (CEMBA). 
+* CEMBA_wmb_snATAC
+This repository is used for the whole mouse brain (wmb) snATAC-seq data analysis
+of Center for Epigenomics of the Mouse Brain Atlas (CEMBA), which is now accepted by Nature 2023.
+
+[[./repo_figures/GraphAbstract.tif]]
+
+
+** Data
+   
 
 ** Pipeline
     - We now have 234 samples and 2.3 million cells in total. So most
