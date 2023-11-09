@@ -18,7 +18,8 @@ of Center for Epigenomics of the Mouse Brain Atlas (CEMBA), which is now accepte
     - We mainly use [[https://github.com/kaizhang/SnapATAC2][SnapATAC2]] to analyze the single-nucleus ATAC-seq data
     - Comparation between Scrublet and AMULET: https://github.com/yuelaiwang/CEMBA_AMULET_Scrublet 
     - The deep learning related codes now in the repo: https://github.com/yal054/mba_dl_model
-    
+
+[[./repo_figures/snATAC-seq_analysis_pipeline.pdf]]      
 ** Codes
 *** [[file:package/R/cembav2env.R][cembav2env.R]]: R env to store the metadata during analysis.
  |----------------+-------------------------------------------------------|
