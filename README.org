@@ -1,6 +1,21 @@
-** CEMBA_wmb_snATAC
-This repository is used for the whole mouse brain snATAC-seq data analysis
-of Center for Epigenomics of the Mouse Brain Atlas (CEMBA). 
+* CEMBA_wmb_snATAC
+This repository is used for the whole mouse brain (wmb) snATAC-seq data analysis
+of Center for Epigenomics of the Mouse Brain Atlas (CEMBA), which is now accepted by Nature 2023.
+
+[[./repo_figures/GraphAbstract.tif]]
+
+
+** Data
+- Demultiplexed data can be accessed via the NEMO archive (NEMO,
+  RRID:SCR_016152) at https://assets.nemoarchive.org/dat-bej4ymm (the
+  raw directory under Source Data URL in this archive).
+- We also uploaded our demultiplexed fastq files and processed files
+  under the GEO accession number GSE246791:
+  - https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE246791
+- Processed data is also available on our web portal and can be explored here: http://www.catlas.org.
+  - A Google drive link for bigwig files and SnapATAC2 files just for backup:
+    - https://drive.google.com/drive/folders/1mule-CkxN939mxhYAqpOIxjPpq0j8qVP?usp=sharing
+   
 
 ** Pipeline
     - We now have 234 samples and 2.3 million cells in total. So most
@@ -12,7 +27,8 @@ of Center for Epigenomics of the Mouse Brain Atlas (CEMBA).
     - We mainly use [[https://github.com/kaizhang/SnapATAC2][SnapATAC2]] to analyze the single-nucleus ATAC-seq data
     - Comparation between Scrublet and AMULET: https://github.com/yuelaiwang/CEMBA_AMULET_Scrublet 
     - The deep learning related codes now in the repo: https://github.com/yal054/mba_dl_model
-    
+
+[[./repo_figures/snATAC-seq_analysis_pipeline.jpg]]      
 ** Codes
 *** [[file:package/R/cembav2env.R][cembav2env.R]]: R env to store the metadata during analysis.
  |----------------+-------------------------------------------------------|
@@ -36,7 +52,7 @@ of Center for Epigenomics of the Mouse Brain Atlas (CEMBA).
 *** Peak calling
    We use macs2 with multiple stage filtering, especially use SPM >= 5
    for filtering peaks.
-   See details in [[file:03.peakingcalling][03.peakingcalling]]
+   See details in [[file:03.peakcalling][03.peakcalling]]
 *** PBS TORQUE
     In order to better support pbs torque in tscc, please
     - =mkdir -p ~/.config/snakemake=
