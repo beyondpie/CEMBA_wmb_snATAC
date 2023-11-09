@@ -3,13 +3,7 @@
 suppressPackageStartupMessages(library("stringr"))
 suppressPackageStartupMessages(library("dplyr"))
 suppressPackageStartupMessages(library("tidyverse"))
-suppressPackageStartupMessages(library("ggplot2"))
-suppressPackageStartupMessages(library("RColorBrewer"))
-suppressPackageStartupMessages(library("ggpubr"))
-suppressPackageStartupMessages(library("ComplexHeatmap"))
 
-packdir <- "./package/R"
-import::from(.from="colors.R", .directory=packdir, ArchRPalettes)
 
 # * meta functions
 cal_cv <- function(x){
@@ -44,23 +38,6 @@ peak.num.set <- function(anno, TE.meta){
 	return(TEs.peak.num.set)
 }
 
-smScatter_plot <- function(TEs.meta, cv, mean, title="Title", xlab="x-axis", ylab="y-axis", alpha=0){
-	buylrd <- c("#313695", "#4575B4", "#74ADD1", "#ABD9E9", "#E0F3F8", "#FFFFBF",
-		"#FEE090", "#FDAE61", "#F46D43", "#D73027", "#A50026")
-	g1 <- ggplot(data=TEs.meta, aes_string(cv, mean)) + stat_density2d(aes(fill=..density..^0.25), geom="tile", contour=FALSE, n=256) + 
-		scale_fill_gradientn(colours=buylrd) 
-	g2 <- g1 + geom_point(alpha=alpha, shape=20)
-	g3 <- g2 + labs(title=title, x=xlab, y=ylab)
-	g4 <- g3 + theme(plot.title=element_text(face="bold.italic", size="14", color="black", hjust=0.5), 
-        axis.title=element_text(face="bold", size=10, color="black"),
-        axis.text=element_text(face="plain", size=8, color="black"),
-        panel.background=element_rect(fill="white", color="black"),
-        panel.grid.major=element_blank(),legend.position="none",
-        panel.spacing=unit(1, "cm"),
-        plot.margin=margin(1,1,1,1,"cm"))
- 	return(g4)
-}
-
 # * load data
 peak.anno <- readRDS("./CEMBA_data/rds/update_pmat/peak.anno.rds")
 peak.anno.TEs <- readRDS("./CEMBA_data/rds/update_pmat/peak.anno.TEs.rds")
@@ -74,8 +51,6 @@ total.count.subclass <- total.count.subclass[order(names(total.count.subclass))]
 
 # * TEs CPM and variablity
 TEs.count.TE.meta.sum <- meta.TE.sumcount(peak.anno.TEs, peak.count.TEs, "AnnoDetail")
-plot_logcpm_TEsumcount_cv.mean <- smScatter_plot(TEs.count.TE.meta.sum, "cv.logcpm", "mean.logcpm", "TE variation across cell subclass", 
-	"Coefficient of variation", expression(bold("Avg. log"["2"])*bold(" (CPM+1)")))   
 
 TEs.count.TE.meta.sum %>% filter(cv.logcpm<0.36, mean.logcpm>0.6) -> TEs.count.invariableTE.meta    
 TEs.count.TE.meta.sum %>% filter(cv.logcpm>=0.36, mean.logcpm>0.6) -> TEs.count.variableTE.meta 
@@ -84,12 +59,9 @@ TEinvariable.peak.num <- peak.num(peak.anno.TEs, TEs.count.invariableTE.meta)
 TEvariable.peak.num.set <- peak.num.set(peak.anno.TEs, TEs.count.variableTE.meta)
 TEinvariable.peak.num.set <- peak.num.set(peak.anno.TEs, TEs.count.invariableTE.meta)
 
-# * plot output
-TEs_scatter <- plot_logcpm_TEsumcount_cv.mean + geom_hline(yintercept=0.6, linetype="dashed", color="white") + 
-	geom_vline(xintercept=0.36, linetype="dashed", color="white") + annotate(geom="curve", x=0.5, y=10, xend=0.25, yend=9, 
-    curvature=.3, arrow=arrow(length=unit(2, "mm")), color="white") + 
-    annotate(geom="text", x=0.52, y=10, label=paste0("Invariable TEs\nn = ", nrow(TEs.count.invariableTE.meta)), hjust="left", color="white") +
-    annotate(geom="text", x=1, y=4, label=paste0("Variable TEs\nn = ", nrow(TEs.count.variableTE.meta)), hjust="left", color="white")
-ggsave("./plot/figS15.TEs_variability.pdf", TEs_scatter, width=8, height=8)
+# * save data
+saveRDS(TEs.count.TE.meta.sum, "TEs.count.TE.meta.sum.rds")
+saveRDS(TEs.count.invariableTE.meta, "TEs.count.invariableTE.meta.rds")
+
 
 
