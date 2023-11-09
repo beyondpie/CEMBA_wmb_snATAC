@@ -2,7 +2,7 @@
 This repository is used for the whole mouse brain (wmb) snATAC-seq data analysis
 of Center for Epigenomics of the Mouse Brain Atlas (CEMBA), which is now accepted by Nature 2023.
 
-[[./repo_figures/GraphAbstract.tif]]
+[[./repo_figures/GraphAbstract.jpg]]
 
 
 ** Data
