@@ -128,3 +128,5 @@ dmypy.json
 # Pyre type checker
 .pyre/
 /meta/._subclass_and_genemarker_CEMBAv1.xlsx
+/repo_figures/._snATAC-seq_analysis_pipeline.jpg
+/repo_figures/._snATAC-seq_analysis_pipeline.pdf
