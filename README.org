@@ -6,6 +6,14 @@ of Center for Epigenomics of the Mouse Brain Atlas (CEMBA), which is now accepte
 
 
 ** Data
+- Demultiplexed data can be accessed via the NEMO archive (NEMO,
+  RRID:SCR_016152) at https://assets.nemoarchive.org/dat-bej4ymm (the
+  raw directory under Source Data URL in this archive).
+- We also uploaded our demultiplexed fastq files and processed files
+  under the GEO accession number GSE246791.
+- Processed data is also available on our web portal and can be explored here: http://www.catlas.org.
+  - A Google drive link for bigwig files and SnapATAC2 files just for backup:
+    - https://drive.google.com/drive/folders/1mule-CkxN939mxhYAqpOIxjPpq0j8qVP?usp=sharing
    
 
 ** Pipeline
