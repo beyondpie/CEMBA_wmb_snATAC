@@ -4,6 +4,9 @@ of Center for Epigenomics of the Mouse Brain Atlas (CEMBA), which is now accepte
 
 [[./repo_figures/GraphAbstract.jpg]]
 
+* Important Note
+All the analysis and the h5ad data generated are from SnapATAC2 under <= 2.4.0
+There are some break changes :https://kzhang.org/SnapATAC2/changelog.html later after SnapATAC2 >= 2.5.0
 
 ** Data
 - Demultiplexed data can be accessed via the NEMO archive (NEMO,
