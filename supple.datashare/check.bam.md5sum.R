@@ -1,5 +1,4 @@
 library(data.table)
-library(tidyverse)
 
 # read ours
 my_md5sum <- data.table::fread(file = "raw_bam_file.md5sum",
@@ -14,6 +13,7 @@ remote_md5sum <- data.table::fread(file = "catlas2023_bam_md5sums.txt",
   setNames(object = _, nm = c("bam", "md5sum"))
 rownames(remote_md5sum) <- remote_md5sum$bam
 
+sum(my_md5sum$bam %in% remote_md5sum$bam)
 all(remote_md5sum[my_md5sum$bam, "md5sum"] == my_md5sum$md5sum)
 
 
