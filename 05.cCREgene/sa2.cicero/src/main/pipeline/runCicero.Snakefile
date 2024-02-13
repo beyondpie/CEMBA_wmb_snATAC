@@ -7,7 +7,7 @@ with open("subclass-name.txt", 'r')  as f:
     subclasses = [l.strip() for l in f.readlines()]
 
 rscript_bin = "/home/szu/mambaforge/bin/Rscript"
-work_dir = "/projects/ps-renlab2/szu/projects/CEMBA2/04.cCREgene/sa2.cicero"
+work_dir = "/projects/ps-renlab2/szu/projects/CEMBA_wmb_snATAC/05.cCREgene/sa2.cicero"
 flag_dir =  os.path.join(work_dir, "flag_dir")
 log_dir = os.path.join(work_dir, "log_dir")
 
@@ -33,7 +33,7 @@ rule run_cicero:
         queue = queue
     shell:
         """
-        {rscript_bin} run_cicero.R {wildcards.sc} 2>&1 > {log}
+        {rscript_bin} {work_dir}/src/main/R/run_cicero.R {wildcards.sc} 2>&1 > {log}
         """
         
     
@@ -48,5 +48,5 @@ rule run_cicero_shuf:
         queue = queue
     shell:
         """
-        {rscript_bin} run_cicero_shuf.R {wildcards.sc} 2>&1 > {log}
+        {rscript_bin} {work_dir}/src/main/R/run_cicero_shuf.R {wildcards.sc} 2>&1 > {log}
         """
