@@ -133,3 +133,5 @@ dmypy.json
 /repo_figures/._GraphAbstract.tif
 /repo_figures/._GraphAbstract.jpg
 /data/
+/00.data.preprocess/out/
+/00.data.preprocess/src/test/python/.tmprOXZWn/
