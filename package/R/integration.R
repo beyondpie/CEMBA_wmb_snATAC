@@ -411,7 +411,7 @@ getGeneSymbol <- function(snapGeneSymbols, rnaGeneEnsmus, ensmu2geneSymbol){
 
 #' @export
 get.downsample.fun <- function(minNum = 500,
-                               maxNum = 1000){
+                               maxNum = 1000) {
   f <- function(index, labels) {
     stat <- table(labels)
     ## put divided in the first since sometimes the full production may
@@ -419,26 +419,28 @@ get.downsample.fun <- function(minNum = 500,
     # only 32-bit integer are supported
     idealNum <- (stat / sum(stat)) * minNum * length(stat)
     nms <- names(idealNum)
+    # FIXME: logic is too complex
     lindex <- lapply(nms, function(i) {
       curIndex <- index[which(labels %in% i)]
-      if ( stat[i] <= minNum) {
+      if ( (stat[i] <= max(minNum, idealNum[i])) ) {
         return(curIndex)
-      } else {
-        tmpIndex <- sample(curIndex, size = idealNum[i], replace = FALSE)
-        tmp2Index <- tmpIndex
-        if(length(tmpIndex) <= minNum) {
-          tmp2Index <- sample(curIndex, size = minNum, replace = FALSE)
-        }
-        if (length(tmpIndex) > maxNum) {
-          tmp2Index <- sample(tmpIndex, size = maxNum, replace = FALSE)
-        }
-        return(tmp2Index)
       }
+      tmpIndex <- sample(curIndex, size = idealNum[i], replace = FALSE)
+      tmp2Index <- tmpIndex
+      if(length(tmpIndex) <= minNum) {
+        tmp2Index <- sample(curIndex, size = minNum, replace = FALSE)
+      }
+      if (length(tmpIndex) > maxNum) {
+        tmp2Index <- sample(tmpIndex, size = maxNum, replace = FALSE)
+      }
+      return(tmp2Index)
     })
     return(sort(unlist(lindex)))
   }
   return(f)
 }
+
+
 
 #' Convert snap object to Seurat by gmat
 #'
@@ -669,3 +671,414 @@ getIntOvlpMat <- function(class = "nn",
   return(mat)
 }
 
+# ===========================================
+# Add Seurat v5 integration related functions
+# ===========================================
+#' @export 
+convertAnn2Seurat5 <- function(annfnm,
+                               modality,
+                               group = "X",
+                               outdir,
+                               overwrite = TRUE,
+                               assay = "RNA",
+                               isLogNorm = TRUE,
+                               removeCounts = FALSE,
+                               addObsMeta = FALSE,
+                               usePython = "") {
+  if (dir.exists(outdir) && (!overwrite)) {
+    message(outdir, " exist and no overwrite.")
+  } else {
+    message("read anndata from hdf5: ", annfnm)
+    xlognorm <- BPCells::open_matrix_anndata_hdf5(
+      path = annfnm, group = group)
+    message("write matrix to dir: ", outdir)
+    BPCells::write_matrix_dir(mat = xlognorm, dir = outdir, overwrite = overwrite)
+  }
+  d <- BPCells::open_matrix_dir(outdir)
+  s5 <- Seurat::CreateSeuratObject(counts = d, assay = assay)
+  if (isLogNorm) {
+    s5 <- Seurat::SetAssayData(
+      object = s5, slot = "data", new.data = d)
+    if (removeCounts) {
+      message("remove counts slot in assay: ", assay)
+      message("This may affect FindVariableFeatures function.")
+      s5[[assay]]$counts <- NULL
+    }
+  }
+  s5$modality <- modality
+  if (addObsMeta) {
+    message("Add obs_meta to Seurat.")
+    if (!grepl("python", usePython)) {
+      warning(usePython, ": no python detected.")
+    } else {
+      reticulate::use_python(usePython)
+      ad <- reticulate::import("anndata", convert = FALSE)
+      allen_ann <- ad$read_h5ad(filename = annfnm, backed = 'r')
+      obs_meta <- allen_ann$obs
+      obsMeta <- reticulate::py_to_r(obs_meta)
+      attr(obsMeta, "pandas.index") <- NULL
+      if ("cl" %in% colnames(obsMeta)) {
+        cls <- obsMeta$cl
+        if (is.factor(cls)) {
+          message("Hard code 'cl' column from factor to int.")
+          clInt <- as.integer(levels(cls)[cls])
+          obsMeta$cl <- clInt
+        }
+      } # end of transform cl to Int
+      obsMeta <- obsMeta[colnames(s5), ]
+      s5 <- Seurat::AddMetaData(s5, metadata = obsMeta)
+    } # end of handling of adding obs meta in details
+  } # end of adding obs meta
+  return(s5)
+}
+
+#' depend on get.downsample.fun in the same file
+#' @export
+downsampleSeurat <- function(seu,
+                             groupBy = "cluster_id",
+                             minNum = 1000,
+                             maxNum = 2000) {
+  fn.dp <- get.downsample.fun(
+    minNum = minNum, maxNum = maxNum)
+  allcells <- colnames(seu)
+  ## NOTE: seu[[groupBy]] will return data.frame with one column
+  labels <- seu@meta.data[[groupBy]]
+  if(is.null(labels)) {
+    warning(groupBy, " is not int meta.data.")
+    return(seu)
+  }
+  dp.cells <- fn.dp(index = allcells, labels = labels)
+  subset(seu, cells = dp.cells)
+}
+
+#' @export
+toSeuratInMemory <- function(seu, slot = "data", assay = "RNA",
+                             removeCounts = FALSE) {
+  mat <- as(seu[[assay]][[slot]], Class = "dgCMatrix")
+  meta <- seu@meta.data
+  message("transform to in-memory seurat object with slot: ", slot)
+  r <- Seurat::CreateSeuratObject(counts = mat, assay = assay,
+    meta.data = meta)
+  if (slot == "data") {
+    r <- Seurat::SetAssayData(object = r,
+      slot = "data", new.data = mat)
+    if (removeCounts) {
+      message("remove counts slot for in-memory seurat.")
+      r[[assay]]$counts <- NULL
+    }
+  }
+  return(r)
+}
+
+#' @export
+isOnDiskMat.Seurat <- function(seu, onlayer = "counts") {
+  t <- SeuratObject::LayerData(seu, layer = onlayer)
+  if (attr(class(t), "package") == "BPCells") {
+    TRUE
+  } else {
+    FALSE
+  }
+}
+
+#' depends on isOnDiskMat.Seurat
+#' @export
+calVarOfFea.Seurat <- function(seu, onlayer = "counts") {
+  mat <- SeuratObject::LayerData(seu, layer = onlayer)
+  if (isOnDiskMat.Seurat(seu, onlayer)) {
+    tmp <- BPCells::matrix_stats(
+      matrix = mat, row_stats= "variance", col_stats = "none")
+    tmp$row_stats["variance", ]
+  } else {
+    sparseMatrixStats::rowVars(mat) |>
+      x => stats::setNames(x, rownames(seu))
+  }
+}
+
+#' @export
+getvf.Seurat <- function(seu,
+                         onlayer = "count",
+                         eps = 0.0001) {
+  nall <- nrow(seu)
+  x <- calVarOfFea.Seurat(seu, onlayer)
+  vf <- names(x)[x > eps]
+  nf <- length(vf)
+  message("From ", nall,
+    " features, detect ", nf, " variational features.")
+  return(vf)
+}
+
+#' depends on isOnDiskMat.Seurat, calVarOfFea.Seuat
+#' @export
+setVariableFeatures <- function(ref,
+                                query,
+                                features = NULL,
+                                onlayer = "counts",
+                                nfeatures = 2000,
+                                on = c("ref", "all"),
+                                eps = 0.0001) {
+  message("Get variational features of ref.")
+  vfref <- getvf.Seurat(ref, onlayer, eps)
+  message("Get variational features of query.")
+  vfquery <- getvf.Seurat(query, onlayer, eps)
+  
+  
+  vf <- if (!is.null(features)) {
+    nf <- length(features)
+    message("Detect ", nf, " features.")
+    message("Ignore variablefeatures then.")
+    intersect(features, intersect(vfref, vfquery))
+  } else {
+    useOn <- match.arg(on)
+    message("Set variable features based on: ", useOn)
+    
+    if(useOn == "ref") {
+      refVF <- if (length(x = Seurat::VariableFeatures(ref)) == 0) {
+        message("No variable features in ref. Calculating...")
+        Seurat::FindVariableFeatures(ref, nfeatures = nfeatures) |>
+          x => Seurat::VariableFeatures(x)
+      } else {
+        Seurat::VariableFeatures(ref)
+      }
+      intersect(refVF, intersect(vfref, vfquery))
+    } else {
+      Seurat::SelectIntegrationFeatures(object.list = list(ref, query),
+        nfeatures = nfeatures,
+        fvf.nfeatures = nfeatures,
+        verbose = TRUE)
+    }
+  }
+  message("Get ", length(vf), " features finally.")
+  return(vf)
+}
+
+#' @export
+getPredictLabel <- function(tfquery) {
+  labels <- tfquery$predicted.id
+  scores <- tfquery$predicted.id.score
+  cells <- colnames(tfquery)
+  r <- data.frame(
+    barcode = cells,
+    predict = labels,
+    score = scores
+  )
+  rownames(r) <- cells
+  return(r)
+}
+
+#' @export
+getPredictScoreMat <- function(tfquery) {
+  predictAssay <- tfquery@assays$prediction.score.id
+  score <- predictAssay@data
+  return(score)
+}
+
+#' @return array with name
+#' @export
+getMetaCol.Seurat <- function(seu, colnm) {
+  ## use repeat colnm to get array
+  ## instead of data.frame with one column
+  g <- seu[[colnm]][[colnm]]
+  names(g) <- colnames(seu)
+  return(g)
+}
+
+#' depend on getPredictLabel,
+#' getPredictScoremat, getMetaCol.Seurat
+TransferLabelSum <- R6::R6Class(
+  classname = "TransferLabelSum",
+  public = list(
+    # params
+    kAnchor = 5,
+    feaName = "vf",
+    dsNum = 50,
+    allenTech = "10xv3",
+    group = "neuron",
+    method = "cca",
+    anchor = NULL,
+    tflabel = NULL,
+    refLabelCols = c("subclass_id", "supertype_id", "cl"),
+    tfnmprefix = function() {
+      paste(self$group,
+        paste0("atac.", self$allenTech),
+        self$method,
+        self$feaName,
+        self$kAnchor,
+        sep = "_")
+    },
+    initialize = function(kAnchor = 5,
+                          feaName = "vf",
+                          dsNum = 50,
+                          allenTech = "10xv3",
+                          group = "neuron",
+                          method = "cca") {
+      self$kAnchor <- kAnchor
+      self$feaName <- feaName
+      self$dsNum <- dsNum
+      self$allenTech <- allenTech
+      self$group <- group
+      self$method <- method
+    },
+    loadAnchor = function(fromdir) {
+      f <- file.path(fromdir,
+        paste0(self$tfnmprefix(), ".tf.anchor.rds"))
+      if(!file.exists(f)) {
+        stop(f, " does not exist.")
+      }
+      self$anchor <- readRDS(f)
+      invisible(self)
+    },
+    loadtfLabel = function(fromdir) {
+      f <- file.path(fromdir,
+        paste0(self$tfnmprefix(), ".tf.label.rds"))
+      if(!file.exists(f)) {
+        stop(f, " does not exist.")
+      }
+      self$tflabel <- readRDS(f)
+      if (is.null(names(self$tflabel))) {
+        message("name of tflabel is null, then add the name.")
+        names(self$tflabel) <- self$refLabelCols
+      }
+      invisible(self)
+    },
+    getAvgTLSMat.queryGroup = function(tfSum,
+                                        refCol = "cl",
+                                        queryCol = "L4",
+                                        rowfn = rowSums) {
+      tfmat <- getPredictScoreMat(tfSum$tflabel[[refCol]])
+      nrefCol <- nrow(tfmat)
+      nquery <- ncol(tfmat)
+      message(nrefCol, " groups in ref col: ", refCol)
+      message(nquery, " cells are predicted.")
+      queryGroup <- getMetaCol.Seurat(tfSum$tflabel[[refCol]])
+      ug <- unique(queryGroup)
+      message("Find ", length(ug), " groups from ", queryCol)
+      r <- future.apply::future_vapply(
+        X = ug,
+        FUN = \(g) {
+          n <- sum(queryGroup == g)
+          rowfn(tfmat[, queryGroup == g, drop = FALSE]) / n
+        },
+        FUN.VALUE = rep(0.0, nrefCol)
+      )
+      colnames(r) <- ug
+      return(r)
+    },
+
+    #' need R new feature in 4.2 by setting 
+    #' Sys.setenv("_R_USE_PIPEBIND_" = TRUE)
+    #' @export
+    getAvgVoteMat.queryGroup = function(tfSum,
+                                         refCol = "cl",
+                                        queryCol = "L4") {
+      seu <- tfSum$tflabel[[refCol]]
+      tfmat <- getPredictScoreMat(seu)
+      refGroup <- rownames(tfmat)
+      nrefCol <- nrow(tfmat)
+      nquery <- ncol(tfmat)
+      message(nrefCol, " groups in ref col: ", refCol)
+      message(nquery, " cells are predicted.")
+      tfLabels <- getPredictLabel(seu)
+      queryGroup <- getMetaCol.Seurat(seu, queryCol) |>
+        x => x[tfLabels$barcode]
+      ug <- unique(queryGroup)
+      message("Find ", length(ug), " groups from ", queryCol)
+      r <- future.apply::future_vapply(
+        X = ug,
+        FUN = \(g)  {
+          r <- rep(0.0, length(refGroup))
+          names(r) <- refGroup
+          index <- queryGroup == g
+          n <- sum(index)
+          tmp <- table(tfLabels[index, "predict"]) |>
+            toNamedArray.1dtable()
+          r[names(tmp)] <- tmp / n
+          return(r)
+        },
+        FUN.VALUE = rep(0.0, length(refGroup))
+      )
+      colnames(r) <- ug
+      rownames(r) <- refGroup
+      return(r)
+    }, ## end of fn
+    
+    #' need R new feature in 4.2 by setting
+    #' Sys.setenv("_R_USE_PIPEBIND_" = TRUE)
+    #' @export
+    getAvgVoteMat4SubclassByRefclId = function(tfSum,
+                                               queryCol = "L4",
+                                               cl2subclass) {
+      refCol <- "cl"
+      seu <- tfSum$tflabel[[refCol]]
+      tfmat <- getPredictScoreMat(seu)
+      
+      refGroup <- rownames(tfmat)
+      scGroup <- unique(cl2subclass[refGroup, "subclass_id"])
+      
+      nrefCol <- nrow(tfmat)
+      nquery <- ncol(tfmat)
+      message(nrefCol, " groups in ref col: ", refCol)
+      message(nquery, " cells are predicted.")
+      
+      tfLabels <- getPredictLabel(seu)
+      tfLabels$subclass_id <- cl2subclass[
+        tfLabels$predict, "subclass_id"]
+      queryGroup <- getMetaCol.Seurat(seu, queryCol) |>
+        x => x[tfLabels$barcode]
+      ug <- unique(queryGroup)
+      message("Find ", length(ug), " groups from ", queryCol)
+      r <- future.apply::future_vapply(
+        X = ug,
+        FUN = \(g)  {
+          r <- rep(0.0, length(scGroup))
+          names(r) <- scGroup
+          index <- queryGroup == g
+          n <- sum(index)
+          tmp <- table(tfLabels[index, "subclass_id"]) |>
+            toNamedArray.1dtable()
+          r[names(tmp)] <- tmp / n
+          return(r)
+        },
+        FUN.VALUE = rep(0.0, length(scGroup))
+      )
+      colnames(r) <- ug
+      rownames(r) <- scGroup
+      return(r)
+    } ## end of fn
+
+  ) ## end of public list
+) ## endf of def of TransferLabelSum R6 class
+
+
+#' tfmat: transfer label score: ref by query
+#' @export
+prepareDotPlot4TransferLabel <- function(tfmat,
+                                         refOrder = NULL,
+                                         names = c("row", "column", "score"),
+                                         ignoreEmptyRef = TRUE) {
+  maxScore <- getMaxColScoreWithName(mat = tfmat)
+  query2ref <- data.frame(
+    query = colnames(tfmat),
+    ref = names(maxScore),
+    row.names = colnames(tfmat)
+  )
+  if (ignoreEmptyRef) {
+    message("remove refs not having query mapped to.")
+    tfmat <- tfmat[rownames(tfmat) %in% query2ref$ref, ]
+  }
+  if (is.null(refOrder)) {
+    message("refOrder is null, will use default numeric order for it.")
+    refOrder <- rownames(tfmat)
+    refOrder <- refOrder[order(as.integer(refOrder))]
+  } else {
+    refOrder <- refOrder[refOrder %in% rownames(tfmat)]
+  }
+  queryOrder <- query2ref$query[
+    order(factor(query2ref$ref, levels = refOrder))]
+
+  meltmat <- to3.matrix(tfmat, names)
+  meltmat[,1] <- factor(meltmat[,1], levels = refOrder)
+  meltmat[,2] <- factor(meltmat[,2], levels = queryOrder)
+  # reduce size of meltmat
+  meltmat <- meltmat[meltmat[,3] > 0, ]
+  return(meltmat)
+}
