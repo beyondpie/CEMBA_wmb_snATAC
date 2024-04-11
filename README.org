@@ -57,14 +57,6 @@ There are some break changes :https://kzhang.org/SnapATAC2/changelog.html later 
    We use macs2 with multiple stage filtering, especially use SPM >= 5
    for filtering peaks.
    See details in [[file:03.peakcalling][03.peakcalling]]
-*** PBS TORQUE
-    In order to better support pbs torque in tscc, please
-    - =mkdir -p ~/.config/snakemake=
-    - then =cp -r /projects/ps-renlab2/szu/projects/CEMBA2/package/pbs-torque-conda ~/.config/snakemake/=
-    - then go to the pbs-torque-conda directory you copy,
-      1. modify config.yaml: replace szu to your name and corresponding conda path
-      2. modify submit.yaml: replace szu to your name
-      3. modify pbs-submit.py: replace szu to your name
 
 
 
