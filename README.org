@@ -6,7 +6,7 @@ of Center for Epigenomics of the Mouse Brain Atlas (CEMBA), which is now accepte
 
 * Important Note
 All the analysis and the h5ad data generated are from SnapATAC2 under <= 2.4.0
-There are some break changes :https://kzhang.org/SnapATAC2/changelog.html later after SnapATAC2 >= 2.5.0
+There are some [[https://kzhang.org/SnapATAC2/changelog.html][break changes]] later after SnapATAC2 >= 2.5.0
 
 ** Data
 - Demultiplexed data can be accessed via the NEMO archive (NEMO,
@@ -34,7 +34,18 @@ There are some break changes :https://kzhang.org/SnapATAC2/changelog.html later 
 
 [[./repo_figures/snATAC-seq_analysis_pipeline.jpg]]      
 ** Codes
-*** [[file:package/R/cembav2env.R][cembav2env.R]]: R env to store the metadata during analysis.
+*** Clustering
+    In total, we have implemented four-round iterative clustering.
+    See details in [[file:01.clustering][01.clustering]]
+*** Integration and annotation
+    We use Allen's scRNAseq data and their annotations for our data annotation.
+    See details in [[file:02.integration][02.integration]]
+*** Peak calling
+   We use macs2 with multiple stage filtering, especially use SPM >= 5
+   for filtering peaks.
+   See details in [[file:03.peakcalling][03.peakcalling]]
+*** Comments on some scripts:
+1. [[file:package/R/cembav2env.R][cembav2env.R]]: R env to store the metadata during analysis.
  |----------------+-------------------------------------------------------|
  | Enviorment     | Description                                           |
  |----------------+-------------------------------------------------------|
@@ -47,25 +58,6 @@ There are some break changes :https://kzhang.org/SnapATAC2/changelog.html later 
  |----------------+-------------------------------------------------------|
  | Sa2PeakCalling | Peak calling meta data                                |
  |----------------+-------------------------------------------------------|
-*** Clustering
-    In total, we have implemented four-round iterative clustering.
-    See details in [[file:01.clustering][01.clustering]]
-*** Integration and annotation
-    We use Allen's scRNAseq data and their annotations for our data annotation.
-    See details in [[file:02.integration][02.integration]]
-*** Peak calling
-   We use macs2 with multiple stage filtering, especially use SPM >= 5
-   for filtering peaks.
-   See details in [[file:03.peakcalling][03.peakcalling]]
-*** PBS TORQUE
-    In order to better support pbs torque in tscc, please
-    - =mkdir -p ~/.config/snakemake=
-    - then =cp -r /projects/ps-renlab2/szu/projects/CEMBA2/package/pbs-torque-conda ~/.config/snakemake/=
-    - then go to the pbs-torque-conda directory you copy,
-      1. modify config.yaml: replace szu to your name and corresponding conda path
-      2. modify submit.yaml: replace szu to your name
-      3. modify pbs-submit.py: replace szu to your name
-
 
 
 

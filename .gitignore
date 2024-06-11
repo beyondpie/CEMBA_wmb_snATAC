@@ -135,3 +135,5 @@ dmypy.json
 /data/
 /00.data.preprocess/out/
 /00.data.preprocess/src/test/python/.tmprOXZWn/
+*.Rhistory
+/._.gitignore
