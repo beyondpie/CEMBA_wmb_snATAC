@@ -9,6 +9,10 @@ All the analysis and the h5ad data generated are from SnapATAC2 under <= 2.4.0
 There are some [[https://kzhang.org/SnapATAC2/changelog.html][break changes]] later after SnapATAC2 >= 2.5.0
 
 ** Data
+- Our dissection 4D annotated in the meta data, should be 4E; and 4E should be 4D. 
+  - This might be a label issue during experiment record. We are not that sure.
+  - Check the disccusion for details info: https://github.com/beyondpie/CEMBA_wmb_snATAC/discussions/20 .
+  - In our repository, we keep everything now unchanged. So if you need 4D region, you should give 4E a look and vice versa.
 - Demultiplexed data can be accessed via the NEMO archive (NEMO,
   RRID:SCR_016152) at https://assets.nemoarchive.org/dat-bej4ymm (the
   raw directory under Source Data URL in this archive).
@@ -59,5 +63,6 @@ There are some [[https://kzhang.org/SnapATAC2/changelog.html][break changes]] la
  | Sa2PeakCalling | Peak calling meta data                                |
  |----------------+-------------------------------------------------------|
 
-
+* Change Log
+1. 2024-09-25: correction of 4D and 4E in our cell meta. 
 
