@@ -1,12 +1,16 @@
 * CEMBA_wmb_snATAC
 This repository is used for the whole mouse brain (wmb) snATAC-seq data analysis
-of Center for Epigenomics of the Mouse Brain Atlas (CEMBA), which is now accepted by Nature 2023.
-
-[[./repo_figures/GraphAbstract.jpg]]
+of Center for Epigenomics of the Mouse Brain Atlas (CEMBA), which is now published in Nature 2023 (https://www.nature.com/articles/s41586-023-06824-9).
 
 * Change Log
-1. 2024-09-25: add explanation in Discusssion for 4D and 4E dissections. 
-2. 2024-10-19: add google drive link for 2.3 million cell meta data.
+1. 2025-03-22: add zenodo link to store
+   - subclass-specific CREs using SnapATAC2 differential anaysis. 
+   - count_peakBysubclass.csv, pseudobulk-level count data for all the peaks.
+   - cpm_peakBysubclass.csv, pseudobulk-level Count-Per-Million (CPM) data for all the peaks.
+1. 2024-10-19: add google drive link for 2.3 million cell meta data.
+2. 2024-09-25: add explanation in Discusssion for 4D and 4E dissections. 
+
+[[./repo_figures/GraphAbstract.jpg]]
 
 * Important Note
 All the analysis and the h5ad data generated are from SnapATAC2 under <= 2.4.0
@@ -28,6 +32,8 @@ There are some [[https://kzhang.org/SnapATAC2/changelog.html][break changes]] la
     - https://drive.google.com/drive/folders/1mule-CkxN939mxhYAqpOIxjPpq0j8qVP?usp=sharing
 - All the cellmeta information:
   - Google drive link: https://drive.google.com/drive/folders/1UNeOar5UuBNrIjB_z53s25nrm81arXPW?usp=share_link
+- Sublcass-level DA (differential accessibiility) results, peudobulk-level count and CPM for all the peaks.
+   Zenodo link: 
 
 ** Pipeline
     - We now have 234 samples and 2.3 million cells in total. So most
